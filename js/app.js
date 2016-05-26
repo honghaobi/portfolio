@@ -21,12 +21,12 @@ function init() {
 
     var theme = {
         name: "cubes",
-        geometry: new THREE.CubeGeometry(30, 30, 30),
-        color: 0x3890b0,
-        lightColor: 0xd9cd42,
-        cameraZ: 5,
+        geometry: new THREE.CubeGeometry(40, 40, 40),
+        color: 0x3f3f3f,
+        lightColor: 0xffffff,
+        cameraZ: 800,
         createObjects: function() {
-            for (var i = 0; i < 1500; i++) {
+            for (var i = 0; i < 2000; i++) {
                 var mesh = new THREE.Mesh(theme.geometry, material);
                 mesh.position.x = Math.random() * 2000 - 1000;
                 mesh.position.y = Math.random() * 2000 - 1000;
@@ -112,8 +112,8 @@ function onWindowResize() {
 }
 
 function onDocumentMouseMove(event) {
-    mouseX = (event.clientX - windowHalfX) * 5;
-    mouseY = (event.clientY - windowHalfY) * 5;
+    mouseX = (event.clientX - windowHalfX) * 1;
+    mouseY = (event.clientY - windowHalfY) * 1;
 }
 
 function animate() {
@@ -130,8 +130,9 @@ function render() {
         ry = Math.sin(time * 0.3) * 0.5,
         rz = Math.sin(time * 0.3) * 0.5;
 
-    camera.position.x += (mouseX - camera.position.x) * .05;
-    camera.position.y += (-mouseY - camera.position.y) * .05;
+    camera.position.x += (mouseX * 0.1 - camera.position.x) * .05;
+    camera.position.y += (mouseY * 0.2 - camera.position.y) * .05;
+
 
     camera.lookAt(scene.position);
 

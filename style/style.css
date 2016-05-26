@@ -1,24 +1,9 @@
 body {
-  background-image: linear-gradient(0deg, #adcffa, #fac59b);
+  background-image: linear-gradient(0deg, #ffffff, #ffffff);
   overflow: hidden;
 }
 
-.re-render {
-  color: #222;
-  padding: 12px 20px;
-  border: solid 2px #222;
-  border-radius: 5px;
-  position: fixed;
-  top: 20px;
-  right: 20px;
-}
-.re-render:hover {
-  cursor: pointer;
-  color: whitesmoke;
-  background: #222;
-}
-
 #canvas {
-  opacity: 0.1;
+  opacity: 0.06;
   z-index: 9;
 }
