@@ -46,44 +46,23 @@ function init() {
     scene = new THREE.Scene();
     scene.fog = new THREE.Fog(0xF5F5F5, 1, 10000);
 
-    // Set Material
     var material = new THREE.MeshLambertMaterial({
         emissive: theme.color
     });
 
-    // Create the group to place the objects
     group = new THREE.Group();
 
-    // Create the objects
     theme.createObjects();
-
-    // Add Group to scene
     scene.add(group);
 
-    ////////////////////////////////////
-    // Setup Camera
-    ////////////////////////////////////
     camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 1, 10000);
     camera.position.z = theme.cameraZ;
 
-    ////////////////////////////////////
-    // Lighting
-    ////////////////////////////////////
-
-    // create a point light
     var pointLight = new THREE.DirectionalLight(theme.lightColor);
-
-    // set its position
     pointLight.position.x = 20;
     pointLight.position.y = 120;
     pointLight.position.z = 0;
-
-    // add to the scene
     scene.add(pointLight);
-
-    ////////////////////////////////////
-    // Rendering
-    ////////////////////////////////////
 
     renderer = new THREE.WebGLRenderer({
         antialias: true
@@ -97,10 +76,7 @@ function init() {
     window.addEventListener('resize', onWindowResize, false);
 }
 
-/////////////////////////////////
-// Feel free to resize that windah, Y'all!
-// We all know a good pen should resize when you be adjustin' that little screen dat errythang renders into, knah mean?
-////////////////////////////////////
+
 function onWindowResize() {
     windowHalfX = window.innerWidth / 2;
     windowHalfY = window.innerHeight / 2;
@@ -136,9 +112,10 @@ function render() {
 
     camera.lookAt(scene.position);
 
-    group.rotation.x = rx / 5;
-    group.rotation.y = ry / 5;
-    group.rotation.z = rz / 5;
+
+    group.rotation.x = rx / 15;
+    group.rotation.y = ry / 15;
+    group.rotation.z = rz / 15;
 
     renderer.render(scene, camera);
 }
