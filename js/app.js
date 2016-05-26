@@ -119,3 +119,21 @@ function render() {
 
     renderer.render(scene, camera);
 }
+
+$('.cube').on('click', function(event) {
+  if ($('.cube').hasClass('cubeA')) {
+    $('.cube').removeClass('cubeA');
+    $('.divider').removeClass('dividerA');
+  } else {
+    $('.cube').addClass('cubeA');
+    $('.divider').addClass('dividerA');
+  }
+});
+
+$('.cube').on('mouseenter', function(event) {
+  $('.container').addClass('op100');
+});
+
+$('.cube').on('mouseleave', function(event) {
+  $('.container').removeClass('op100');
+});

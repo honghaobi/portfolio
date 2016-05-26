@@ -56,17 +56,23 @@ body {
   margin: auto;
   z-index: 2;
   opacity: .7;
+  transition: all 1s;
 }
 
-#cube {
+.cube {
   width: 100%;
   height: 100%;
   position: absolute;
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  -webkit-animation: spin 10s infinite ease;
-  animation: spin 10s infinite ease;
+  /*-webkit-animation: spin 5s ease;
+  animation: spin 5s ease;*/
+}
+
+.cubeA {
+  -webkit-animation: spin 5s ease;
+  animation: spin 5s ease;
 }
 
 .side {
@@ -80,7 +86,7 @@ body {
 }
 
 .divider {
-  background: #ffffff;
+  background: #292929;
   height: 100px;
   width: 100px;
   left: 60px;
@@ -88,12 +94,14 @@ body {
   margin: 0;
   display: block;
   position: absolute;
-  -webkit-animation: forward 10s infinite linear;
-  animation: forward 10s infinite linear;
+}
+.dividerA{
+  -webkit-animation: forward 5s linear;
+  animation: forward 5s linear;
 }
 
 .side.front {
-  background: #f1f1f1;
+  background: #292929;
   -webkit-transform: rotateY(0deg) translateZ(100px);
   transform: rotateY(0deg) translateZ(100px);
 }
@@ -112,18 +120,18 @@ body {
   transform: rotateY(-90deg) translateZ(100px);
 }
 .side.top {
-  background: #333;
+  background: #ffffff;
   -webkit-transform: rotateX(90deg) translateZ(100px);
   transform: rotateX(90deg) translateZ(100px);
 }
 .side.bottom {
-  background: #333;
+  background: #ffffff;
   -webkit-transform: rotateX(-90deg) translateZ(100px);
   transform: rotateX(-90deg) translateZ(100px);
 }
 
 .panel {
-  background: #ccc;
+  background: #ffffff;
   position: absolute;
 }
 
@@ -152,7 +160,7 @@ body {
 }
 
 .side-slice {
-  background: #bfbfbf;
+  background: #ffffff;
   width: 200px;
   height: 80px;
   right: 0px;
@@ -168,13 +176,13 @@ body {
 }
 
 .side-slice.left {
-  background: #333;
+  background: #ffffff;
   -webkit-transform: rotateX(90deg) translateZ(-40px);
   transform: rotateX(90deg) translateZ(-40px);
 }
 
 .side-slice.right {
-  background: #333;
+  background: #ffffff;
   -webkit-transform: rotateX(-90deg) translateZ(-40px);
   transform: rotateX(-90deg) translateZ(-40px);
 }
@@ -217,4 +225,18 @@ body {
   to {
     -webkit-transform: rotateY(90deg) translateZ(89px);
   }
+}
+
+.henry {
+  color: #ffffff;
+  font-size: 60px;
+  padding-top: 30%;
+  padding-bottom: 30%;
+  padding-left: 14%;
+  padding-right: 14%;
+}
+
+.op100 {
+  opacity: 1;
+  transition: all 1s;
 }
