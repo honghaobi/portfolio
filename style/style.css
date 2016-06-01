@@ -107,15 +107,17 @@ body {
 }
 
 .side.back {
-  background: #f1f1f1;
+  background: #ffffff;
   -webkit-transform: rotateY(180deg) translateZ(100px);
   transform: rotateY(180deg) translateZ(100px);
 }
 .side.left {
+  background: #ffffff;
   -webkit-transform: rotateY(90deg) translateZ(100px);
   transform: rotateY(90deg) translateZ(100px);
 }
 .side.right {
+  background: #ffffff;
   -webkit-transform: rotateY(-90deg) translateZ(100px);
   transform: rotateY(-90deg) translateZ(100px);
 }
@@ -130,73 +132,12 @@ body {
   transform: rotateX(-90deg) translateZ(100px);
 }
 
-.panel {
-  background: #ffffff;
-  position: absolute;
-}
-
-.panel.bottom {
-  height: 60px;
-  width: 200px;
-  bottom: 0;
-}
-
-.panel.left {
-  height: 200px;
-  width: 60px;
-  left: 0;
-}
-
-.panel.right {
-  height: 200px;
-  width: 60px;
-  right: 0;
-}
-
-.panel.top {
-  height: 60px;
-  width: 200px;
-  top: 0;
-}
-
-.side-slice {
-  background: #ffffff;
-  width: 200px;
-  height: 80px;
-  right: 0px;
-  top: 44px;
-  position: absolute;
-  bottom: 0;
-  left: -40px;
-}
-
-.side-slice.top {
-  -webkit-transform: rotateX(180deg) translateZ(-40px);
-  transform: rotateX(180deg) translateZ(-40px);
-}
-
-.side-slice.left {
-  background: #ffffff;
-  -webkit-transform: rotateX(90deg) translateZ(-40px);
-  transform: rotateX(90deg) translateZ(-40px);
-}
-
-.side-slice.right {
-  background: #ffffff;
-  -webkit-transform: rotateX(-90deg) translateZ(-40px);
-  transform: rotateX(-90deg) translateZ(-40px);
-}
-.side-slice.bottom {
-  -webkit-transform: rotateX(-180deg) translateZ(40px);
-  transform: rotateX(-180deg) translateZ(40px);
-}
-
 @keyframes spin {
   from {
     transform: scale(1,1) rotateX(0deg) rotate(0deg) translateY(0px) translateZ(0px);
   }
   to {
-    transform:  scale(2.56) rotateX(-90deg) rotate(270deg) translateY(15px) translateZ(-10px);
+    transform:  scale(6) rotateX(-90deg) rotate(180deg) translateY(15px) translateZ(-10px);
   }
 }
 
@@ -209,12 +150,17 @@ body {
   }
 }
 
+@keyframes spinb {
+  from { transform: rotateY(0) }
+  to { transform: rotateY(360deg) }
+}
+
 @-webkit-keyframes spin {
   from {
     -webkit-transform: scale(1,1) rotateX(0deg) rotate(0deg) translateY(0px) translateZ(0px);
   }
   to {
-    -webkit-transform:  scale(2.56) rotateX(-90deg) rotate(270deg) translateY(15px) translateZ(-10px);
+    -webkit-transform:  scale(8) rotateX(-90deg) rotate(270deg) translateY(15px) translateZ(-10px);
   }
 }
 
@@ -239,4 +185,34 @@ body {
 .op100 {
   opacity: 1;
   transition: all 1s;
+}
+
+.one{
+  background-color: blue;
+  width: 50%;
+  height: 50%;
+  position: relative;
+}
+
+img{
+  width: 600px;
+}
+
+.two{
+  background-color: red;
+  width: 50%;
+  height: 50%;
+  position: relative;
+}
+.three{
+  background-color: orange;
+  width: 50%;
+  height: 50%;
+  position: relative;
+}
+.four{
+  background-color: yellow;
+  width: 50%;
+  height: 50%;
+  position: relative;
 }
