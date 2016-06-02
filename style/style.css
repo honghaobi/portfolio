@@ -66,13 +66,15 @@ body {
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
+
   /*-webkit-animation: spin 5s ease;
   animation: spin 5s ease;*/
 }
 
 .cubeA {
-  -webkit-animation: spin 5s ease;
-  animation: spin 5s ease;
+  -webkit-animation: spin-small 3s ease;
+  animation: spin-small 3s ease;
+  animation-fill-mode: forwards;
 }
 
 .side {
@@ -85,21 +87,6 @@ body {
   backface-visibility: hidden;
 }
 
-.divider {
-  background: #292929;
-  height: 100px;
-  width: 100px;
-  left: 60px;
-  top: 40px;
-  margin: 0;
-  display: block;
-  position: absolute;
-}
-.dividerA{
-  -webkit-animation: forward 5s linear;
-  animation: forward 5s linear;
-}
-
 .side.front {
   background: #292929;
   -webkit-transform: rotateY(0deg) translateZ(100px);
@@ -107,34 +94,34 @@ body {
 }
 
 .side.back {
-  background: #ffffff;
+  background: #46ffcd;
   -webkit-transform: rotateY(180deg) translateZ(100px);
   transform: rotateY(180deg) translateZ(100px);
 }
 .side.left {
-  background: #ffffff;
+  background: #ff6d2e;
   -webkit-transform: rotateY(90deg) translateZ(100px);
   transform: rotateY(90deg) translateZ(100px);
 }
 .side.right {
-  background: #ffffff;
+  background: #46ffcd;
   -webkit-transform: rotateY(-90deg) translateZ(100px);
   transform: rotateY(-90deg) translateZ(100px);
 }
 .side.top {
-  background: #ffffff;
+  background: #ff6d2e;
   -webkit-transform: rotateX(90deg) translateZ(100px);
   transform: rotateX(90deg) translateZ(100px);
 }
 .side.bottom {
-  background: #ffffff;
+  background: #ff6d2e;
   -webkit-transform: rotateX(-90deg) translateZ(100px);
   transform: rotateX(-90deg) translateZ(100px);
 }
 
 @keyframes spin {
   from {
-    transform: scale(1,1) rotateX(0deg) rotate(0deg) translateY(0px) translateZ(0px);
+    transform: scale(1) rotateX(0deg) rotate(0deg) translateY(0px) translateZ(0px);
   }
   to {
     transform:  scale(6) rotateX(-90deg) rotate(180deg) translateY(15px) translateZ(-10px);
@@ -150,9 +137,9 @@ body {
   }
 }
 
-@keyframes spinb {
-  from { transform: rotateY(0) }
-  to { transform: rotateY(360deg) }
+@keyframes spin-small {
+  from { transform: scale(1) rotateY(0) rotateX(0)}
+  to { transform: scale(.6) rotateY(180deg) rotateX(90deg)}
 }
 
 @-webkit-keyframes spin {
@@ -176,43 +163,23 @@ body {
 .henry {
   color: #ffffff;
   font-size: 60px;
-  padding-top: 30%;
-  padding-bottom: 30%;
-  padding-left: 14%;
-  padding-right: 14%;
+  padding-top: 33%;
+  padding-bottom: 33%;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.work {
+  color: #ffffff;
+  font-size: 70px;
+  padding-top: 33%;
+  padding-bottom: 33%;
+  padding-left: 12%;
+  padding-right: 12%;
+  transform: rotate(180deg);
 }
 
 .op100 {
   opacity: 1;
   transition: all 1s;
-}
-
-.one{
-  background-color: blue;
-  width: 50%;
-  height: 50%;
-  position: relative;
-}
-
-img{
-  width: 600px;
-}
-
-.two{
-  background-color: red;
-  width: 50%;
-  height: 50%;
-  position: relative;
-}
-.three{
-  background-color: orange;
-  width: 50%;
-  height: 50%;
-  position: relative;
-}
-.four{
-  background-color: yellow;
-  width: 50%;
-  height: 50%;
-  position: relative;
 }
