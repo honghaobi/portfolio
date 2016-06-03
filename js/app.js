@@ -137,3 +137,8 @@ $('.cube').on('mouseenter', function(event) {
 $('.cube').on('mouseleave', function(event) {
   $('.container').removeClass('op100');
 });
+
+
+$('#show-buttons button').click(function(){
+  $('#cube').attr('class',$(this).attr('class'));
+});
