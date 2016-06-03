@@ -184,8 +184,43 @@ body {
   transition: all 1s;
 }
 
+.work-sec{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 1);
+  z-index: 1;
+  bottom: 100vh;
+  left: 0;
+  transition: all 3s ease;
+}
+
+.work-sec-in{
+  bottom: 0;
+  transition: all 3s ease;
+}
+
+.work-sec img {
+  width: 49.7vw;
+  height: 49.7vh;
+  overflow: scroll;
+  padding: 0;
+  margin: 0;
+}
 
 
+
+
+
+
+
+/*-------------------------------------------*/
+
+
+
+
+
+/*
 #cube {
   width: 100%;
   height: 100%;
@@ -254,8 +289,4 @@ body {
 }
 #cube.show-bottom {
   transform: translateZ( -100px ) rotateX(90deg);
-}
-
-p#show-button {
-  z-index: 999;
-}
+}*/

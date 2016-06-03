@@ -123,10 +123,10 @@ function render() {
 $('.cube').on('click', function(event) {
   if ($('.cube').hasClass('cubeA')) {
     $('.cube').removeClass('cubeA');
-    $('.divider').removeClass('dividerA');
+    $('.work-sec').removeClass('work-sec-in');
   } else {
     $('.cube').addClass('cubeA');
-    $('.divider').addClass('dividerA');
+    $('.work-sec').addClass('work-sec-in');
   }
 });
 
@@ -139,6 +139,6 @@ $('.cube').on('mouseleave', function(event) {
 });
 
 
-$('#show-buttons button').click(function(){
-  $('#cube').attr('class',$(this).attr('class'));
-});
+// $('#show-buttons button').click(function(){
+//   $('#cube').attr('class',$(this).attr('class'));
+// });
