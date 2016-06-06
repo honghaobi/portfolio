@@ -192,23 +192,60 @@ body {
   z-index: 1;
   bottom: 100vh;
   left: 0;
-  transition: all 3s ease;
+  transition: all 2s ease;
 }
 
 .work-sec-in{
   bottom: 0;
-  transition: all 3s ease;
+  transition: all 2s ease;
 }
 
 .work-sec img {
-  width: 49.7vw;
-  height: 49.7vh;
-  overflow: scroll;
-  padding: 0;
-  margin: 0;
+  width: 49.5%;
+  height: 49.5%;
 }
 
+.contact-sec{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 1);
+  z-index: 1;
+  left: 100vw;
+  top: 0;
+  transition: all 2s ease;
+}
 
+.contact-sec-in{
+  left: 0;
+  transition: all 2s ease;
+}
+
+.contact-sec img {
+  width: 49.5%;
+  height: 49.5%;
+}
+
+.about-sec{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 1);
+  z-index: 1;
+  top: 100vh;
+  left: 0;
+  transition: all 2s ease;
+}
+
+.about-sec-in{
+  top: 0;
+  transition: all 2s ease;
+}
+
+.about-sec img {
+  width: 49.5%;
+  height: 49.5%;
+}
 
 
 

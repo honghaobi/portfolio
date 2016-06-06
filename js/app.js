@@ -123,12 +123,16 @@ function render() {
 $('.cube').on('click', function(event) {
   if ($('.cube').hasClass('cubeA')) {
     $('.cube').removeClass('cubeA');
-    $('.work-sec').removeClass('work-sec-in');
   } else {
     $('.cube').addClass('cubeA');
     $('.work-sec').addClass('work-sec-in');
   }
 });
+
+$('.work').on('click', function(event) {
+  $('.about-sec').addClass('about-sec-in');
+});
+
 
 $('.cube').on('mouseenter', function(event) {
   $('.container').addClass('op100');
