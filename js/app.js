@@ -120,29 +120,6 @@ function render() {
     renderer.render(scene, camera);
 }
 
-$('.cube').on('click', function(event) {
-  if ($('.cube').hasClass('cubeA')) {
-    $('.cube').removeClass('cubeA');
-  } else {
-    $('.cube').addClass('cubeA');
-    $('.work-sec').addClass('work-sec-in');
-  }
+$('#show-buttons div').on('click', function(event){
+  $('#cube').attr('class',$(this).attr('class'));
 });
-
-$('.work').on('click', function(event) {
-  $('.about-sec').addClass('about-sec-in');
-});
-
-
-$('.cube').on('mouseenter', function(event) {
-  $('.container').addClass('op100');
-});
-
-$('.cube').on('mouseleave', function(event) {
-  $('.container').removeClass('op100');
-});
-
-
-// $('#show-buttons button').click(function(){
-//   $('#cube').attr('class',$(this).attr('class'));
-// });
