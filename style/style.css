@@ -21,136 +21,29 @@ body {
 #canvas {
   margin: 0;
   padding: 0;
-  opacity: 0.06;
+  opacity: 0.07;
   z-index: -1;
-}
-
-#show-buttons {
-  position: absolute;
-  z-index: 3;
-  background-color: rgba(18, 18, 18, 0.85);
-  width: 100vw;
-  height: 30px;
-  margin: 0;
-  padding-top: 5px;
-}
-
-#show-buttons div {
-  font-size: 22px;
-  padding-left: 20px;
-  padding-right: 20px;
-  display: inline;
-  color: white;
-  cursor: pointer;
-}
-
-figure {
-  margin: 0;
-}
-
-.container {
-  margin: auto;
-  top: 0; left: 0; bottom: 0; right: 0;
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  perspective: 1000px;
-  z-index: 3;
-}
-
-#cube {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  transform-style: preserve-3d;
-  transition: transform 2s cubic-bezier(0.25, 1, 0.25, 1);;
-}
-
-.op100{
-  opacity: 1;
-  transition: transform 2s cubic-bezier(0.25, 1, 0.25, 1);;
-}
-
-#cube figure {
-  backface-visibility: hidden;
-  display: block;
-  position: absolute;
-  width: 200px;
-  height: 200px;
-}
-
-.menu{
-  font-size: 60px;
-  font-weight: bold;
-  color: white;
-  text-align: center;
-  margin-top: 30%;
-  position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
-}
-
-#cube .front  { background: #aaaaaa; }
-#cube .back   { background: #aaaaaa; }
-#cube .right  { background: #303030; }
-#cube .left   { background: #303030; }
-#cube .top    { background: #ff6d2e; }
-#cube .bottom { background: #ff6d2e; }
-
-#cube .front  {
-  transform: translateZ( 100px );
-}
-#cube .back   {
-  transform: rotateX( -180deg ) translateZ( 100px );
-}
-#cube .right {
-  transform: rotateY(   90deg ) translateZ( 100px );
-}
-#cube .left {
-  transform: rotateY(  -90deg ) translateZ( 100px );
-}
-#cube .top {
-  transform: rotateX(   90deg ) translateZ( 100px );
-}
-#cube .bottom {
-  transform: rotateX(  -90deg ) translateZ( 100px );
-}
-
-#cube.show-front {
-  transform: translateZ( -100px );
-}
-#cube.show-back {
-  transform: translateZ( -100px ) rotateX( -180deg );
-}
-#cube.show-right {
-  transform: translateZ( -100px ) rotateY( -90deg );
-}
-#cube.show-left {
-  transform: translateZ( -100px ) rotateY( 90deg );
-}
-#cube.show-top {
-  transform: translateZ( -100px ) rotateX( -90deg );
-}
-#cube.show-bottom {
-  transform: translateZ( -100px ) rotateX( 90deg );
 }
 
 .ng {
   position: absolute;
   top: 89px;
-  left: 8%;
-  width: 400px;
-  height: 400px;
-  background-color: #55adb6;
+  left: 50%;
+  width: 600px;
+  height: 600px;
+  background-color: rgba(85, 173, 182, 0.7);
   z-index: 2;
   overflow: hidden;
 }
 
 .ng img{
   position: absolute;
-  width: 550px;
-  top: 50px;
+  width: 800px;
+  top: 100px;
   left: 10px;
 }
+
+
 
 .epac {
   position: absolute;

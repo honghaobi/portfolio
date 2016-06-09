@@ -3,50 +3,72 @@
   <head>
     <meta charset="utf-8">
     <title>Henry's Portfolio Site</title>
+    <link rel="stylesheet" type="text/css" href="style/animate.css"/>
+    <link rel="stylesheet" type="text/css" href="style/cube.css"/>
+    <link rel="stylesheet" type="text/css" href="style/menu.css"/>
     <link rel="stylesheet" type="text/css" href="style/style.css"/>
   </head>
   <body>
 
-    <div id="show-buttons">
-      <div class="show-bottom">henry</div>
+    <!-- <div id="show-buttons">
+      <div class="show-bottom">home</div>
       <div class="show-left">work</div>
       <div class="show-top">about</div>
       <div class="show-back">skills</div>
       <div class="show-front">contact</div>
-      <!-- <div class="show-right">toys</div> -->
+    </div> -->
+
+    <div id="sidebar">
+      <ul class="menu">
+        <li class="menu-global menu-top">
+          <span class="menu-text">
+            <div class="show-bottom">home</div>
+          </span>
+        </li>
+        <li class="menu-global menu-middle">
+          <span class="menu-text">
+            <div class="show-left">work</div>
+          </span>
+        </li>
+        <li class="menu-global menu-bottom">
+          <span class="menu-text">
+            <div class="show-top">about</div>
+          </span>
+        </li>
+        <li class="menu-global menu-hidden">
+          <span class="menu-text">
+            <div class="show-back">skills</div>
+          </span>
+        </li>
+        <li class="menu-global menu-hidden">
+          <span class="menu-text">
+            <div class="show-front">contact</div>
+          </span>
+        </li>
+        <div class="menu-close fa fa-close"></div>
+        <div class="click-blocker"></div>
+      </ul>
     </div>
 
     <section class="container example">
       <div id="cube" class="show-bottom">
         <figure class="front">
-          <div class="menu">
-            contact
-          </div>
+          <div class="cube-text">contact</div>
         </figure>
         <figure class="back">
-          <div class="menu">
-            skills
-          </div>
+          <div class="cube-text">skills</div>
         </figure>
         <figure class="right">
-          <div class="menu">
-            toys
-          </div>
+          <div class="cube-text">toys</div>
         </figure>
         <figure class="left">
-          <div class="menu">
-            work
-          </div>
+          <div class="cube-text">work</div>
         </figure>
         <figure class="top">
-          <div class="menu">
-            about
-          </div>
+          <div class="cube-text">about</div>
         </figure>
         <figure class="bottom">
-          <div class="menu">
-            henry
-          </div>
+          <div class="cube-text">henry</div>
         </figure>
       </div>
     </section>
@@ -55,9 +77,9 @@
       <div class="ng">
         <img src="../img/ng.png" alt="ng" />
       </div>
-      <div class="epac">
+      <!-- <div class="epac">
         <img src="../img/epac.png" alt="epac" />
-      </div>
+      </div> -->
     </section>
 
     <div class="canvas-container">
@@ -68,6 +90,7 @@
     <script src="js/three.js"></script>
     <script src="js/app.js"></script>
     <script src="js/bg.js"></script>
+    <script src="js/menu.js"></script>
     <script src="js/page.js"></script>
   </body>
 </html>
