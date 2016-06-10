@@ -1,7 +1,7 @@
 showHomePage();
 
-$('#sidebar ul li span div').on('click', function(event){
-  $('#cube').attr('class',$(this).attr('class'));
+$('#sidebar ul li').on('click', function(event){
+  $('#cube').attr('class',$(this).children('span').children('div').attr('class'));
 
   if ($('#cube').attr('class')==='show-bottom') {
     showHomePage();

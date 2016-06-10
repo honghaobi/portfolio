@@ -6,7 +6,8 @@ var Menu = {
     menuMiddle: $('.menu-middle'),
     menuBottom: $('.menu-bottom'),
     menuHidden: $('.menu-hidden'),
-    menuText: $('.menu-text')
+    menuText: $('.menu-text'),
+    menuOrange: $('.menu-orange')
   },
 
   init: function() {
@@ -31,6 +32,7 @@ var Menu = {
     Menu.el.menuHidden.toggleClass('menu-hidden-expand expand');
     Menu.el.menuText.toggleClass('menu-text-expand');
     Menu.el.menuClose.toggleClass('menu-close-visible');
+    Menu.el.menuOrange.toggleClass('menu-orange-visible');
   }
 };
 
