@@ -21,4 +21,6 @@ function showHomePage() {
 
 function showWorkPage() {
   $('.work-page').show();
+  $('.ng').addClass('animated fadeInDown');
+  $('.work-page-menu').addClass('animated fadeInUp');
 }

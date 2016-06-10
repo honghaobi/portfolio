@@ -1,3 +1,12 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
 @font-face {
     font-family:"GillSans";
     src: url("fonts/gillsans.ttf");
@@ -25,13 +34,32 @@ body {
   z-index: -1;
 }
 
+.work-page-menu {
+  position: absolute;
+  top: 89px;
+  right: 50%;
+  width: 600px;
+  height: 600px;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 2;
+  padding: 130px 130px 0 0;
+  overflow: hidden;
+}
+
+.work-page-menu ul li {
+  margin: 15px 0 15px 0;
+  font-size: 40px;
+  text-align: right;
+  color: #303030;
+}
+
 .ng {
   position: absolute;
   top: 89px;
   left: 50%;
   width: 600px;
   height: 600px;
-  background-color: rgba(85, 173, 182, 0.7);
+  background-color: rgba(85, 173, 182, 0.8);
   z-index: 2;
   overflow: hidden;
 }
