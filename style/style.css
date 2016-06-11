@@ -41,6 +41,7 @@ body {
   width: 600px;
   height: 600px;
   background-color: rgba(255, 255, 255, 0.8);
+  color: #303030;
   z-index: 2;
   padding: 130px 130px 0 0;
   overflow: hidden;
@@ -50,7 +51,17 @@ body {
   margin: 15px 0 15px 0;
   font-size: 40px;
   text-align: right;
-  color: #303030;
+  transition: all .5s;
+}
+
+.work-menu-hover {
+  color: #ff6d2e;
+  transition: all .5s;
+  cursor: pointer;
+}
+
+.ng-title {
+  color: rgba(85, 173, 182, 1);
 }
 
 .ng {
@@ -71,22 +82,24 @@ body {
   left: 10px;
 }
 
-
+.epac-title {
+  color: #ff6d2e;
+}
 
 .epac {
   position: absolute;
-  top: 289px;
-  right: 8%;
-  width: 400px;
-  height: 400px;
-  background-color: #aaaaaa;
+  top: 89px;
+  left: 50%;
+  width: 600px;
+  height: 600px;
+  background-color: rgba(255, 109, 46, 0.8);
   z-index: 2;
   overflow: hidden;
 }
 
 .epac img{
   position: absolute;
-  width: 550px;
-  top: 50px;
-  right: 10px;
+  width: 800px;
+  top: 100px;
+  left: 10px;
 }

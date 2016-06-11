@@ -21,6 +21,31 @@ function showHomePage() {
 
 function showWorkPage() {
   $('.work-page').show();
-  $('.ng').addClass('animated fadeInDown');
+  $('.work-page-display').children('div').hide();
+  $('.ng').addClass('animated fadeInDown').show();
   $('.work-page-menu').addClass('animated fadeInUp');
 }
+
+$('.work-page-menu ul li').on('mouseenter', function(event) {
+  $(this).addClass('work-menu-hover');
+});
+
+$('.work-page-menu ul li').on('mouseleave', function(event) {
+  $(this).removeClass('work-menu-hover');
+});
+
+$('.work-page-menu ul li').on('click', function(event) {
+  var selected = $(this);
+
+  selected.siblings().removeClass();
+
+  // $('.work-page-display').children('div').hide();
+
+  if (selected.html() === 'NEIGHBORGOOD') {
+    selected.addClass('ng-title');
+
+  } else if (selected.html() === 'EPAC') {
+    selected.addClass('epac-title');
+  }
+
+});
