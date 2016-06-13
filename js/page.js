@@ -43,9 +43,24 @@ $('.work-page-menu ul li').on('click', function(event) {
 
   if (selected.html() === 'NEIGHBORGOOD') {
     selected.addClass('ng-title');
-
+    $('.ng').siblings().removeClass('fadeInDown').addClass('fadeOutDown');
+    $('.ng').removeClass('fadeOutDown').addClass('animated fadeInDown').show();
+  } else if (selected.html() === 'LEAF IT') {
+    selected.addClass('leaf-title');
+    $('.leaf').siblings().removeClass('fadeInDown').addClass('fadeOutDown');
+    $('.leaf').removeClass('fadeOutDown').addClass('animated fadeInDown').show();
   } else if (selected.html() === 'EPAC') {
     selected.addClass('epac-title');
+    $('.epac').siblings().removeClass('fadeInDown').addClass('fadeOutDown');
+    $('.epac').removeClass('fadeOutDown').addClass('animated fadeInDown').show();
+  } else if (selected.html() === 'VOLUNTOLD') {
+    selected.addClass('vol-title');
+    $('.vol').siblings().removeClass('fadeInDown').addClass('fadeOutDown');
+    $('.vol').removeClass('fadeOutDown').addClass('animated fadeInDown').show();
+  } else if (selected.html() === 'YMSW') {
+    selected.addClass('ymsw-title');
+    $('.ymsw').siblings().removeClass('fadeInDown').addClass('fadeOutDown');
+    $('.ymsw').removeClass('fadeOutDown').addClass('animated fadeInDown').show();
   }
 
 });

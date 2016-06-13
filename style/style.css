@@ -82,8 +82,26 @@ body {
   left: 10px;
 }
 
-.epac-title {
-  color: #ff6d2e;
+.leaf-title {
+  color: #076f4a;
+}
+
+.leaf {
+  position: absolute;
+  top: 89px;
+  left: 50%;
+  width: 600px;
+  height: 600px;
+  background-color: rgba(7, 111, 74, 0.8);
+  z-index: 2;
+  overflow: hidden;
+}
+
+.leaf img{
+  position: absolute;
+  width: 800px;
+  top: 100px;
+  left: 10px;
 }
 
 .epac {
@@ -98,6 +116,50 @@ body {
 }
 
 .epac img{
+  position: absolute;
+  width: 800px;
+  top: 100px;
+  left: 10px;
+}
+
+.vol-title {
+  color: rgba(46, 204, 113, 1);
+}
+
+.vol {
+  position: absolute;
+  top: 89px;
+  left: 50%;
+  width: 600px;
+  height: 600px;
+  background-color: rgba(46, 204, 113, 0.8);
+  z-index: 2;
+  overflow: hidden;
+}
+
+.vol img{
+  position: absolute;
+  width: 800px;
+  top: 100px;
+  left: 10px;
+}
+
+.ymsw-title {
+  color: rgba(249, 208, 33, 1);;
+}
+
+.ymsw {
+  position: absolute;
+  top: 89px;
+  left: 50%;
+  width: 600px;
+  height: 600px;
+  background-color: rgba(249, 208, 33, 0.8);
+  z-index: 2;
+  overflow: hidden;
+}
+
+.ymsw img{
   position: absolute;
   width: 800px;
   top: 100px;
