@@ -55,7 +55,7 @@ body {
 }
 
 .work-menu-hover {
-  color: #ff6d2e;
+  color: #aaaaaa;
   transition: all .5s;
   cursor: pointer;
 }
@@ -168,27 +168,4 @@ body {
   width: 500px;
   top: 110px;
   left: 130px;
-}
-
-.about-page-img {
-  position: absolute;
-  top: 89px;
-  right: 50%;
-  width: 600px;
-  height: 600px;
-  z-index: 2;
-  overflow: hidden;
-}
-
-.about-page-text {
-  position: absolute;
-  top: 89px;
-  left: 50%;
-  width: 600px;
-  height: 600px;
-  background-color: rgba(48, 48, 48, 0.8);
-  color: white;
-  padding: 10%;
-  z-index: 2;
-  overflow: hidden;
 }
