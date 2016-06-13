@@ -17,13 +17,22 @@ $('#sidebar ul li').on('click', function(event){
 });
 function showHomePage() {
   $('.work-page').hide();
+  $('.about-page').hide();
 }
 
 function showWorkPage() {
+  $('.about-page').hide();
   $('.work-page').show();
   $('.work-page-display').children('div').hide();
   $('.ng').addClass('animated fadeInDown').show();
   $('.work-page-menu').addClass('animated fadeInUp');
+}
+
+function showAboutPage() {
+  $('.work-page').hide();
+  $('.about-page').show();
+  $('.about-page-img').addClass('animated fadeInLeft');
+  $('.about-page-text').addClass('animated fadeInRight');
 }
 
 $('.work-page-menu ul li').on('mouseenter', function(event) {
@@ -38,8 +47,6 @@ $('.work-page-menu ul li').on('click', function(event) {
   var selected = $(this);
 
   selected.siblings().removeClass();
-
-  // $('.work-page-display').children('div').hide();
 
   if (selected.html() === 'NEIGHBORGOOD') {
     selected.addClass('ng-title');

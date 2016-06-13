@@ -75,7 +75,7 @@ body {
   overflow: hidden;
 }
 
-.ng img{
+.ng img {
   position: absolute;
   width: 800px;
   top: 100px;
@@ -97,11 +97,15 @@ body {
   overflow: hidden;
 }
 
-.leaf img{
+.leaf img {
   position: absolute;
   width: 800px;
-  top: 100px;
+  top: 0px;
   left: 10px;
+}
+
+.epac-title {
+  color: rgba(255, 109, 46, 1);
 }
 
 .epac {
@@ -115,7 +119,7 @@ body {
   overflow: hidden;
 }
 
-.epac img{
+.epac img {
   position: absolute;
   width: 800px;
   top: 100px;
@@ -137,7 +141,7 @@ body {
   overflow: hidden;
 }
 
-.vol img{
+.vol img {
   position: absolute;
   width: 800px;
   top: 100px;
@@ -159,9 +163,32 @@ body {
   overflow: hidden;
 }
 
-.ymsw img{
+.ymsw img {
   position: absolute;
-  width: 800px;
-  top: 100px;
-  left: 10px;
+  width: 500px;
+  top: 110px;
+  left: 130px;
+}
+
+.about-page-img {
+  position: absolute;
+  top: 89px;
+  right: 50%;
+  width: 600px;
+  height: 600px;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.about-page-text {
+  position: absolute;
+  top: 89px;
+  left: 50%;
+  width: 600px;
+  height: 600px;
+  background-color: rgba(48, 48, 48, 0.8);
+  color: white;
+  padding: 10%;
+  z-index: 2;
+  overflow: hidden;
 }
