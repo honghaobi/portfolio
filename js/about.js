@@ -62,7 +62,7 @@ function fliptiles( targetEntity ) {
       curtile.element.style.transition = "0s";
       curtile.element.style.transitionDelay = "0.5s";
       curtile.element.style.backgroundImage = background;
-    }, Math.round( distance * 1.8 ) );
+    }, Math.round( distance * 2 ) );
   } );
 
 }

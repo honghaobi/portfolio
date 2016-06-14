@@ -73,6 +73,12 @@ body {
   background-color: rgba(85, 173, 182, 0.8);
   z-index: 2;
   overflow: hidden;
+  transition: .5s ease-in-out;
+}
+
+.ng:hover {
+  background-color: rgba(85, 173, 182, 1);
+  transition: .5s ease-in-out;
 }
 
 .ng img {
@@ -80,6 +86,17 @@ body {
   width: 800px;
   top: 100px;
   left: 10px;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.ng:hover img{
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
 .leaf-title {
@@ -95,6 +112,12 @@ body {
   background-color: rgba(7, 111, 74, 0.8);
   z-index: 2;
   overflow: hidden;
+  transition: .5s ease-in-out;
+}
+
+.leaf:hover {
+  background-color: rgba(7, 111, 74, 1);
+  transition: .5s ease-in-out;
 }
 
 .leaf img {
@@ -102,6 +125,17 @@ body {
   width: 800px;
   top: 0px;
   left: 10px;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.leaf:hover img{
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
 .epac-title {
@@ -117,6 +151,12 @@ body {
   background-color: rgba(255, 109, 46, 0.8);
   z-index: 2;
   overflow: hidden;
+  transition: .5s ease-in-out;
+}
+
+.epac:hover {
+  background-color: rgba(255, 109, 46, 1);
+  transition: .5s ease-in-out;
 }
 
 .epac img {
@@ -124,6 +164,17 @@ body {
   width: 800px;
   top: 100px;
   left: 10px;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.epac:hover img{
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
 .vol-title {
@@ -139,6 +190,12 @@ body {
   background-color: rgba(46, 204, 113, 0.8);
   z-index: 2;
   overflow: hidden;
+  transition: .5s ease-in-out;
+}
+
+.vol:hover {
+  background-color: rgba(46, 204, 113, 1);
+  transition: .5s ease-in-out;
 }
 
 .vol img {
@@ -146,6 +203,17 @@ body {
   width: 800px;
   top: 100px;
   left: 10px;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.vol:hover img{
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
 .ymsw-title {
@@ -161,6 +229,12 @@ body {
   background-color: rgba(249, 208, 33, 0.8);
   z-index: 2;
   overflow: hidden;
+  transition: .5s ease-in-out;
+}
+
+.ymsw:hover {
+  background-color: rgba(249, 208, 33, 1);
+  transition: .5s ease-in-out;
 }
 
 .ymsw img {
@@ -168,4 +242,15 @@ body {
   width: 500px;
   top: 110px;
   left: 130px;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.ymsw:hover img{
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
 }
