@@ -1,0 +1,47 @@
+.o-square {
+  position: absolute;
+  background-color: #ff6d2e;
+  width: 400px;
+  height: 400px;
+  right: 50%;
+  margin-right: 100px;
+  top: 50%;
+  margin-top: 100px;
+  z-index: 2;
+}
+
+.w-square {
+  position: absolute;
+  background-color: #ffffff;
+  width: 400px;
+  height: 400px;
+  left: 50%;
+  margin-left: 100px;
+  top: 50%;
+  margin-top: 100px;
+  z-index: 2;
+}
+
+.l-square {
+  position: absolute;
+  background-color: #ffffff;
+  width: 400px;
+  height: 400px;
+  left: 50%;
+  margin-left: -100px;
+  bottom: 50%;
+  margin-bottom: -100px;
+  z-index: 2;
+}
+
+.d-square {
+  position: absolute;
+  background-color: #303030;
+  width: 600px;
+  height: 600px;
+  right: 50%;
+  margin-right: 100px;
+  bottom: 50%;
+  margin-bottom: -100px;
+  z-index: 2;
+}

@@ -18,10 +18,12 @@ $('#sidebar ul li').on('click', function(event){
 function showHomePage() {
   $('.work-page').hide();
   $('.about-page').hide();
+  $('.skills-page').hide();
 }
 
 function showWorkPage() {
   $('.about-page').hide();
+  $('.skills-page').hide();
   $('.work-page').show();
   $('.work-page-display').children('div').hide();
   $('.ng').addClass('animated fadeInDown').show();
@@ -30,9 +32,17 @@ function showWorkPage() {
 
 function showAboutPage() {
   $('.work-page').hide();
+  $('.skills-page').hide();
   $('.about-page').show();
   $('.about-page-img').addClass('animated fadeInLeft');
   $('.about-page-text').addClass('animated fadeInRight');
+}
+
+function showSkillPage() {
+  $('.work-page').hide();
+  $('.about-page').hide();
+  $('.skills-page').show();
+
 }
 
 $('.work-page-menu ul li').on('mouseenter', function(event) {

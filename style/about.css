@@ -17,9 +17,15 @@
   background-color: rgba(48, 48, 48, 0.8);
   color: white;
   text-align: right;
-  padding: 60px 60px 0 120px;
+  padding: 40px 60px 0 40px;
   z-index: 2;
   overflow: hidden;
+}
+
+.about-page-text h2{
+  text-align: right;
+  padding: 0 0 0 70px;
+  font-weight: 100;
 }
 
 .about-page-img div {
@@ -30,6 +36,14 @@
   width: 600px;
   height: 600px;
   cursor: pointer;
+}
+
+.o {
+  color: #ff6d2e;
+}
+
+.g {
+  background: rgba(255, 77, 0, 0.25);
 }
 
 #flippers {
