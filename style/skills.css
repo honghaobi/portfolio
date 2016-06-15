@@ -1,11 +1,46 @@
-.skills-page div {
+.p-skill {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  right: 50%;
+  top: 50%;
+  margin-top: -300px;
+  margin-right: -100px;
+  z-index: 2;
+  font-size: 28px;
+  background-color: #303030;
+  color: white;
+  padding: 2%;
+}
+
+.d-skill {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  left: 50%;
+  top: 50%;
+  margin-left: -100px;
+  margin-top: -250px;
+  z-index: 2;
+  font-size: 28px;
+  background-color: #ff6d2e;
+  text-align: right;
+  color: white;
+  padding: 2%;
+}
+
+/*.skills-page div {
   position: absolute;
   width: 200px;
   height: 200px;
   right: 50%;
   top: 50%;
   z-index: 2;
-}
+  font-size: 48px;
+  color: white;
+  text-align: center;
+  padding-top: 3.5%;
+}*/
 
 .o1-square {
   background-color: #ff6d2e;
