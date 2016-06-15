@@ -17,9 +17,15 @@
   background-color: rgba(48, 48, 48, 0.8);
   color: white;
   text-align: right;
-  padding: 40px 60px 0 40px;
+  padding: 40px 60px 0 60px;
   z-index: 2;
   overflow: hidden;
+  transition: .5s ease-in-out;
+}
+
+.about-page-text:hover {
+  background-color: rgba(48, 48, 48, 1);
+  transition: .5s ease-in-out;
 }
 
 .about-page-text h2{

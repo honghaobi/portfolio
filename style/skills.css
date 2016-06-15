@@ -31,6 +31,30 @@
   margin-top: 100px;
 }
 
+.o5-square {
+  background-color: #ff6d2e;
+  margin-right: -100px;
+  margin-top: 300px;
+}
+
+.o6-square {
+  background-color: #ff6d2e;
+  margin-right: -700px;
+  margin-top: -300px;
+}
+
+.o7-square {
+  background-color: #ff6d2e;
+  margin-right: 500px;
+  margin-top: -100px;
+}
+
+.o8-square {
+  background-color: #ff6d2e;
+  margin-right: 100px;
+  margin-top: -500px;
+}
+
 .d1-square {
   background-color: #303030;
   margin-right: 100px;
@@ -53,4 +77,40 @@
   background-color: #303030;
   margin-right: -500px;
   margin-top: -100px;
+}
+
+.d5-square {
+  background-color: #303030;
+  margin-right: 500px;
+  margin-top: -300px;
+}
+
+.d6-square {
+  background-color: #303030;
+  margin-right: -500px;
+  margin-top: -500px;
+}
+
+.d7-square {
+  background-color: #303030;
+  margin-right: 300px;
+  margin-top: 300px;
+}
+
+.d8-square {
+  background-color: #303030;
+  margin-right: -700px;
+  margin-top: 300px;
+}
+
+.d9-square {
+  background-color: #303030;
+  margin-right: 500px;
+  margin-top: 100px;
+}
+
+.d10-square {
+  background-color: #303030;
+  margin-right: 100px;
+  margin-top: -500px;
 }
