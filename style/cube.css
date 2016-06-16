@@ -46,16 +46,6 @@ figure {
   height: 200px;
 }
 
-/*.menu{
-  font-size: 60px;
-  font-weight: bold;
-  color: white;
-  text-align: center;
-  margin-top: 30%;
-  position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
-}*/
-
 #cube .front  { background: #aaaaaa; }
 #cube .back   { background: #aaaaaa; }
 #cube .right  { background: #303030; }
@@ -63,43 +53,19 @@ figure {
 #cube .top    { background: #ff6d2e; }
 #cube .bottom { background: #ff6d2e; }
 
-#cube .front  {
-  transform: translateZ( 100px );
-}
-#cube .back   {
-  transform: rotateX( -180deg ) translateZ( 100px );
-}
-#cube .right {
-  transform: rotateY(   90deg ) translateZ( 100px );
-}
-#cube .left {
-  transform: rotateY(  -90deg ) translateZ( 100px );
-}
-#cube .top {
-  transform: rotateX(   90deg ) translateZ( 100px );
-}
-#cube .bottom {
-  transform: rotateX(  -90deg ) translateZ( 100px );
-}
+#cube .front { transform: translateZ( 100px ); }
+#cube .back { transform: rotateX( -180deg ) translateZ( 100px ); }
+#cube .right { transform: rotateY(   90deg ) translateZ( 100px ); }
+#cube .left { transform: rotateY(  -90deg ) translateZ( 100px ); }
+#cube .top { transform: rotateX(   90deg ) translateZ( 100px ); }
+#cube .bottom { transform: rotateX(  -90deg ) translateZ( 100px ); }
 
-#cube.show-front {
-  transform: translateZ( -100px );
-}
-#cube.show-back {
-  transform: translateZ( -100px ) rotateX( -180deg );
-}
-#cube.show-right {
-  transform: translateZ( -100px ) rotateY( -90deg );
-}
-#cube.show-left {
-  transform: translateZ( -100px ) rotateY( 90deg );
-}
-#cube.show-top {
-  transform: translateZ( -100px ) rotateX( -90deg );
-}
-#cube.show-bottom {
-  transform: translateZ( -100px ) rotateX( 90deg );
-}
+#cube.show-front { transform: translateZ( -100px ); }
+#cube.show-back { transform: translateZ( -100px ) rotateX( -180deg ); }
+#cube.show-right { transform: translateZ( -100px ) rotateY( -90deg ); }
+#cube.show-left { transform: translateZ( -100px ) rotateY( 90deg ); }
+#cube.show-top { transform: translateZ( -100px ) rotateX( -90deg ); }
+#cube.show-bottom { transform: translateZ( -100px ) rotateX( 90deg ); }
 
 .cube-text{
   font-size: 60px;

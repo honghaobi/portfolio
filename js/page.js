@@ -19,11 +19,13 @@ function showHomePage() {
   $('.work-page').hide();
   $('.about-page').hide();
   $('.skills-page').hide();
+  $('.contact-page').hide();
 }
 
 function showWorkPage() {
   $('.about-page').hide();
   $('.skills-page').hide();
+  $('.contact-page').hide();
   $('.work-page').show();
 
   $('.work-page-menu ul li').siblings().removeClass().first().addClass('ng-title');
@@ -35,6 +37,7 @@ function showWorkPage() {
 function showAboutPage() {
   $('.work-page').hide();
   $('.skills-page').hide();
+  $('.contact-page').hide();
   $('.about-page').show();
   $('.about-page-img').addClass('animated fadeInLeft');
   $('.about-page-text').addClass('animated fadeInRight');
@@ -43,9 +46,19 @@ function showAboutPage() {
 function showSkillPage() {
   $('.work-page').hide();
   $('.about-page').hide();
+  $('.contact-page').hide();
   $('.skills-page').show();
   $('.d-skill').addClass('animated zoomIn');
   $('.p-skill').addClass('animated zoomIn');
+}
+
+function showContactPage() {
+  $('.work-page').hide();
+  $('.about-page').hide();
+  $('.skills-page').hide();
+  $('.contact-page').show();
+  $('.s1').addClass('animated fadeIn');
+  $('.s2').addClass('animated fadeIn');
 }
 
 $('.work-page-menu ul li').on('mouseenter', function(event) {

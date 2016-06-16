@@ -1,0 +1,25 @@
+.s1 {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  margin-top: -300px;
+  margin-right: -300px;
+  width: 600px;
+  height: 600px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #303030;
+  z-index: 3;
+}
+
+.s2 {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  margin-top: -400px;
+  margin-right: -400px;
+  width: 800px;
+  height: 800px;
+  background-color: rgba(48, 48, 48, 0.9);
+  color: #ffffff;
+  z-index: 2;
+}
