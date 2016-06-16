@@ -36,7 +36,8 @@ body {
 
 .work-page-menu {
   position: absolute;
-  top: 89px;
+  top: 50%;
+  margin-top: -300px;
   right: 50%;
   width: 600px;
   height: 600px;
@@ -66,7 +67,8 @@ body {
 
 .ng {
   position: absolute;
-  top: 89px;
+  top: 50%;
+  margin-top: -300px;
   left: 50%;
   width: 600px;
   height: 600px;
@@ -105,7 +107,8 @@ body {
 
 .leaf {
   position: absolute;
-  top: 89px;
+  top: 50%;
+  margin-top: -300px;
   left: 50%;
   width: 600px;
   height: 600px;
@@ -144,7 +147,8 @@ body {
 
 .epac {
   position: absolute;
-  top: 89px;
+  top: 50%;
+  margin-top: -300px;
   left: 50%;
   width: 600px;
   height: 600px;
@@ -183,7 +187,8 @@ body {
 
 .vol {
   position: absolute;
-  top: 89px;
+  top: 50%;
+  margin-top: -300px;
   left: 50%;
   width: 600px;
   height: 600px;
@@ -222,7 +227,8 @@ body {
 
 .ymsw {
   position: absolute;
-  top: 89px;
+  top: 50%;
+  margin-top: -300px;
   left: 50%;
   width: 600px;
   height: 600px;
