@@ -42,7 +42,8 @@ function showSkillPage() {
   $('.work-page').hide();
   $('.about-page').hide();
   $('.skills-page').show();
-
+  $('.d-skill').addClass('animated flipInX');
+  $('.p-skill').addClass('animated flipInX');
 }
 
 $('.work-page-menu ul li').on('mouseenter', function(event) {
