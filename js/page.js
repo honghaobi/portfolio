@@ -25,8 +25,10 @@ function showWorkPage() {
   $('.about-page').hide();
   $('.skills-page').hide();
   $('.work-page').show();
-  $('.work-page-display').children('div').hide();
-  $('.ng').addClass('animated fadeInDown').show();
+
+  $('.work-page-menu ul li').siblings().removeClass().first().addClass('ng-title');
+  $('.ng').siblings().hide();
+  $('.ng').removeClass('fadeOutDown').addClass('animated fadeInDown').show();
   $('.work-page-menu').addClass('animated fadeInUp');
 }
 
