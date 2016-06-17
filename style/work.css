@@ -5,12 +5,19 @@
   right: 50%;
   width: 600px;
   height: 600px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.6);
   color: #303030;
   z-index: 2;
   padding: 130px 130px 0 0;
   overflow: hidden;
+  transition: .5s ease-in-out;
 }
+
+.work-page-menu:hover {
+  background-color: rgba(255, 255, 255, 1);
+  transition: .5s ease-in-out;
+}
+
 
 .work-page-menu ul li {
   margin: 15px 0 15px 0;
