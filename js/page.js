@@ -97,3 +97,11 @@ $('.work-page-menu ul li').on('click', function(event) {
   }
 
 });
+
+$('.resume-link').on('click', function(event) {
+  $('.resume-modal').addClass('resume-modal-show');
+});
+
+$('.resume-modal-close-button').on('click', function(event) {
+  $('.resume-modal').removeClass('resume-modal-show');
+})
