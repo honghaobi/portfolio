@@ -27,9 +27,18 @@ ul {
   text-align: left;
 }
 
+.w-logo{
+  width: 40px;
+  position: absolute;
+  top: 50%;
+  margin-top: -26px;
+  right: 50%;
+  margin-right: -20px;
+}
+
 .click-blocker {
   width: 80px;
-  height: 50px;
+  height: 80px;
   position: absolute;
   left: 0;
   top: 0;
@@ -98,45 +107,45 @@ ul {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-transition: all 0.5s 0s, left 0.1s 0s;
-  transition: all 0.2s 0s, left 0.1s 0s;
+  transition: all 0.5s 0s, left 0.1s 0s;
 }
 
 .expand:hover {
   left: 10px;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .expand:hover div{
   color: white;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .menu li:hover {
   background-color: #ff6d2e;
-  transition: all 0.2s;
+  transition: all 0.5s;
 }
 
 .menu-top-expand {
-  top: 50px;
+  top: 80px;
   background: rgb(255, 255, 255);
-  -webkit-transition: top 0.5s 0.4s, left 0.1s 0s;
-  transition: top 0.5s 0.4s, left 0.1s 0s;
+  -webkit-transition: all 0.5s 0.4s, left 0.1s 0s;
+  transition: all 0.5s 0.4s, left 0.1s 0s;
 }
 
 .menu-middle-expand {
-  top: 100px;
+  top: 130px;
   background: rgb(245, 245, 245);
-  -webkit-transition: top 0.5s 0.3s, left 0.1s 0s;
-  transition: top 0.5s 0.3s, left 0.1s 0s;
+  -webkit-transition: all 0.5s 0.3s, left 0.1s 0s;
+  transition: all 0.5s 0.3s, left 0.1s 0s;
 }
 
 .menu-bottom-expand {
-  top: 150px;
+  top: 180px;
   background: rgb(235, 235, 235);
-  -webkit-transition: top 0.5s 0.2s, left 0.1s 0s;
-  transition: top 0.5s 0.2s, left 0.1s 0s;
+  -webkit-transition: all 0.5s 0.2s, left 0.1s 0s;
+  transition: all 0.5s 0.2s, left 0.1s 0s;
 }
 
 .menu-text-expand {
@@ -149,37 +158,37 @@ ul {
 
 .menu-hidden-expand:nth-child(1) {
   background: rgb(255, 255, 255);
-  top: 50px;
+  top: 80px;
 }
 
 .menu-hidden-expand:nth-child(2) {
   background: rgb(245, 245, 245);
-  top: 100px;
+  top: 130px;
 }
 
 .menu-hidden-expand:nth-child(3) {
   background: rgb(235, 235, 235);
-  top: 150px;
+  top: 180px;
 }
 
 .menu-hidden-expand:nth-child(4) {
   background: rgb(225, 225, 225);
-  top: 200px;
+  top: 230px;
 }
 
 .menu-hidden-expand:nth-child(5) {
   background: rgb(215, 215, 215);
-  top: 250px;
+  top: 280px;
 }
 
 .menu-hidden-expand:nth-child(6) {
   background: rgb(205, 205, 205);
-  top: 300px;
+  top: 330px;
 }
 
 .menu-hidden-expand:nth-child(7) {
   background: rgb(195, 195, 195);
-  top: 350px;
+  top: 380px;
 }
 
 .menu-hidden-expand:nth-child(8) {
