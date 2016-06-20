@@ -132,11 +132,11 @@
   position: fixed;
   display: none;
   opacity: 0;
-  width: 600px;
+  width: 800px;
   height: 800px;
   z-index: 4;
   left: 50%;
-  margin-left: -300px;
+  margin-left: -400px;
   /*transition: opacity 1s ease-in-out;*/
 }
 
@@ -157,8 +157,8 @@
   z-index: 4;
   left: 50%;
   top: 50%;
-  margin-top: -360px;
-  margin-left: 270px;
+  margin-top: -366px;
+  margin-left: 375px;
 }
 
 .resume-modal-close-button:before, .resume-modal-close-button:after {

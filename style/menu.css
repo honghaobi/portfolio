@@ -98,34 +98,45 @@ ul {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-transition: all 0.5s 0s, left 0.1s 0s;
-  transition: all 0.5s 0s, left 0.1s 0s;
+  transition: all 0.2s 0s, left 0.1s 0s;
 }
 
 .expand:hover {
   left: 10px;
-  -webkit-transition: all 0.2s 0s, ;
-  transition: all 0.2s 0s, ;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.expand:hover div{
+  color: white;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.menu li:hover {
+  background-color: #ff6d2e;
+  transition: all 0.2s;
 }
 
 .menu-top-expand {
   top: 50px;
   background: rgb(255, 255, 255);
-  -webkit-transition: all 0.5s 0.4s, left 0.1s 0s;
-  transition: all 0.5s 0.4s, left 0.1s 0s;
+  -webkit-transition: top 0.5s 0.4s, left 0.1s 0s;
+  transition: top 0.5s 0.4s, left 0.1s 0s;
 }
 
 .menu-middle-expand {
   top: 100px;
   background: rgb(245, 245, 245);
-  -webkit-transition: all 0.5s 0.3s, left 0.1s 0s;
-  transition: all 0.5s 0.3s, left 0.1s 0s;
+  -webkit-transition: top 0.5s 0.3s, left 0.1s 0s;
+  transition: top 0.5s 0.3s, left 0.1s 0s;
 }
 
 .menu-bottom-expand {
   top: 150px;
   background: rgb(235, 235, 235);
-  -webkit-transition: all 0.5s 0.2s, left 0.1s 0s;
-  transition: all 0.5s 0.2s, left 0.1s 0s;
+  -webkit-transition: top 0.5s 0.2s, left 0.1s 0s;
+  transition: top 0.5s 0.2s, left 0.1s 0s;
 }
 
 .menu-text-expand {
