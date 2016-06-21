@@ -1,3 +1,14 @@
+.block-highlight:before {
+    background: repeating-linear-gradient(135deg, rgba(255, 255, 255, .3), rgba(255, 255, 255, .3) 1px, transparent 1px, transparent 10px),                    repeating-linear-gradient(45deg, rgba(255, 255, 255, .3), rgba(255, 255, 255, .3) 1px, transparent 1px, transparent 10px);
+    content: "";
+    position: absolute;
+    height: 1000px;
+    left: 0;
+    top: 0px;
+    width: 100%;
+    z-index: 0;
+}
+
 .p-skill {
   position: absolute;
   width: 700px;
@@ -11,7 +22,9 @@
   text-align: right;
   background-color: #ff6d2e;
   color: white;
+  overflow: hidden;
   padding: 6.5%;
+  transition: .5s ease-in-out;
 }
 
 .d-skill {
@@ -25,11 +38,152 @@
   z-index: 2;
   font-size: 28px;
   background-color: #303030;
-  color: white;
+  overflow: hidden;
+  color: #ffffff;
   padding: 2%;
   padding-left: 4%;
+  transition: .5s ease-in-out;
+}
+
+.resume-link:hover {
+  color: #ff6d2e;
+  border-color: #ff6d2e;
+  background-color: #ffffff;
+  transition: .5s ease-in-out;
+}
+
+.d1, .d2, .d3, .d4, .d5, .d6, .d7, .d8, .d9, .d10{
+  color: #ffffff;
+  transition: .2s ease-in-out;
 }
 
 .d-skill:hover .d1 {
-  color: #ff6d2e;
+  color: rgba(255, 235, 227, 1);
+  transition: .2s ease-in-out;
+  transition-delay: 0s;
+}
+
+.d-skill:hover .d2 {
+  color: rgba(252, 220, 207, 1);
+  transition: .2s ease-in-out;
+  transition-delay: 0.05s;
+}
+
+.d-skill:hover .d3 {
+  color: rgba(249, 205, 186, 1);
+  transition: .2s ease-in-out;
+  transition-delay: 0.1s;
+}
+
+.d-skill:hover .d4 {
+  color: rgba(255, 190, 164, 1);
+  transition: .2s ease-in-out;
+  transition-delay: 0.15s;
+}
+
+.d-skill:hover .d5 {
+  color: rgba(255, 175, 143, 1);
+  transition: .2s ease-in-out;
+  transition-delay: 0.2s;
+}
+
+.d-skill:hover .d6 {
+  color: rgba(255, 150, 106, 1);
+  transition: .2s ease-in-out;
+  transition-delay: 0.25s;
+}
+
+.d-skill:hover .d7 {
+  color: rgba(255, 135, 89, 1);
+  transition: .2s ease-in-out;
+  transition-delay: 0.3s;
+}
+
+.d-skill:hover .d8 {
+  color: rgba(255, 129, 75, 1);
+  transition: .2s ease-in-out;
+  transition-delay: 0.35s;
+}
+
+.d-skill:hover .d9 {
+  color: rgba(254, 119, 61, 1);
+  transition: .2s ease-in-out;
+  transition-delay: 0.4s;
+}
+
+.d-skill:hover .d10 {
+  color: rgba(255, 109, 46, 1);
+  transition: .2s ease-in-out;
+  transition-delay: 0.45s;
+}
+
+.p1, .p2, .p3, .p4, .p5, .p6, .p7, .p8, .p9, .p10, .p11 {
+  color: #ffffff;
+  transition: .2s ease-in-out;
+}
+
+.p-skill:hover .p1 {
+  color: rgba(235, 235, 235, 1);
+  transition: .2s ease-in-out;
+  transition-delay: 0s;
+}
+
+.p-skill:hover .p2 {
+  color: rgba(215, 215, 215, 1);
+  transition: .2s ease-in-out;
+  transition-delay: 0.05s;
+}
+
+.p-skill:hover .p3 {
+  color: rgba(195, 195, 195, 1);
+  transition: .2s ease-in-out;
+  transition-delay: 0.1s;
+}
+
+.p-skill:hover .p4 {
+  color: rgba(175, 175, 175, 1);
+  transition: .2s ease-in-out;
+  transition-delay: 0.15s;
+}
+
+.p-skill:hover .p5 {
+  color: rgba(155, 155, 155, 1);
+  transition: .2s ease-in-out;
+  transition-delay: 0.2s;
+}
+
+.p-skill:hover .p6 {
+  color: rgba(135, 135, 135, 1);
+  transition: .2s ease-in-out;
+  transition-delay: 0.25s;
+}
+
+.p-skill:hover .p7 {
+  color: rgba(115, 115, 115, 1);
+  transition: .2s ease-in-out;
+  transition-delay: 0.3s;
+}
+
+.p-skill:hover .p8 {
+  color: rgba(95, 95, 95, 1);
+  transition: .2s ease-in-out;
+  transition-delay: 0.35s;
+}
+
+.p-skill:hover .p9 {
+  color: rgba(75, 75, 75, 1);
+  transition: .2s ease-in-out;
+  transition-delay: 0.4s;
+}
+
+.p-skill:hover .p10 {
+  color: rgba(55, 55, 55, 1);
+  transition: .2s ease-in-out;
+  transition-delay: 0.45s;
+}
+
+.p-skill:hover .p11 {
+  color: rgba(48, 48, 48, 1);
+  transition: .2s ease-in-out;
+  transition-delay: 0.5s;
 }

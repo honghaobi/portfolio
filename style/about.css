@@ -137,14 +137,12 @@
   z-index: 4;
   left: 50%;
   margin-left: -400px;
-  /*transition: opacity 1s ease-in-out;*/
 }
 
 .resume-modal-show {
   position: fixed;
   display: block;
   opacity: 1;
-  /*transition: opacity 1s ease-in-out;*/
 }
 
 .resume-modal-close-button {
