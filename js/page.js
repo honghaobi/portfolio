@@ -1,7 +1,7 @@
 showHomePage();
 
-
 $('#sidebar ul li').on('click', function(event){
+
   $('#cube').attr('class',$(this).children('span').children('div').attr('class'));
 
   if ($('#cube').attr('class')==='show-bottom') {
@@ -16,6 +16,37 @@ $('#sidebar ul li').on('click', function(event){
     showContactPage();
   }
 });
+
+$('#cube .bottom').on('click', function(event) {
+  $('#cube').attr('class','show-left');
+  showWorkPage();
+});
+
+$('#cube .left').on('click', function(event) {
+  $('#cube').attr('class','show-top');
+  showAboutPage();
+});
+
+$('#cube .top').on('click', function(event) {
+  $('#cube').attr('class','show-back');
+  showSkillPage();
+});
+
+$('#cube .back').on('click', function(event) {
+  $('#cube').attr('class','show-right');
+  showContactPage();
+});
+
+$('#cube .right').on('click', function(event) {
+  $('#cube').attr('class','show-front');
+  showHomePage();
+});
+
+$('#cube .front').on('click', function(event) {
+  $('#cube').attr('class','show-bottom');
+  showHomePage();
+});
+
 function showHomePage() {
   $('.work-page').hide();
   $('.about-page').hide();

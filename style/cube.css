@@ -35,7 +35,8 @@ figure {
   height: 100%;
   position: absolute;
   transform-style: preserve-3d;
-  transition: transform 2s cubic-bezier(0.25, 1, 0.25, 1);;
+  transition: transform 2s cubic-bezier(0.25, 1, 0.25, 1);
+  cursor: pointer;
 }
 
 #cube figure {
