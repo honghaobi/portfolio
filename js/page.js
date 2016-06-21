@@ -1,5 +1,6 @@
 showHomePage();
 
+
 $('#sidebar ul li').on('click', function(event){
   $('#cube').attr('class',$(this).children('span').children('div').attr('class'));
 
@@ -61,6 +62,7 @@ function showContactPage() {
   $('.st').addClass('animated fadeIn');
   $('.sr').addClass('animated fadeIn');
   $('.sb').addClass('animated fadeIn');
+  Contact();
 }
 
 $('.work-page-menu ul li').on('mouseenter', function(event) {

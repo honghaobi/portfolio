@@ -1,3 +1,14 @@
+.block-highlight:before {
+    background: repeating-linear-gradient(135deg, rgba(255, 255, 255, .3), rgba(255, 255, 255, .3) 1px, transparent 1px, transparent 10px),                    repeating-linear-gradient(45deg, rgba(255, 255, 255, .3), rgba(255, 255, 255, .3) 1px, transparent 1px, transparent 10px);
+    content: "";
+    position: absolute;
+    height: 1000px;
+    left: 0;
+    top: -110px;
+    width: 100%;
+    z-index: 0;
+}
+
 .sl {
   position: absolute;
   top: 50%;
@@ -7,10 +18,18 @@
   width: 600px;
   height: 600px;
   transform: rotate(45deg);
-  background-color: rgba(170, 170, 170, 0.9);
+  background-color: rgba(170, 170, 170, 0.8);
   color: #303030;
+  overflow: hidden;
   z-index: 1;
+  transition: .5s ease-in-out;
 }
+
+.sl:hover {
+  background-color: rgba(170, 170, 170, 1);
+  transition: .5s ease-in-out;
+}
+
 .st {
   position: absolute;
   bottom: 50%;
@@ -20,9 +39,14 @@
   width: 400px;
   height: 400px;
   transform: rotate(45deg);
-  background-color: rgba(255, 109, 46, 0.9);
-  color: #ffffff;
+  background-color: rgba(255, 109, 46, 0.8);
   z-index: 1;
+  transition: .5s ease-in-out;
+}
+
+.st:hover {
+  background-color: rgba(255, 109, 46, 1);
+  transition: .5s ease-in-out;
 }
 
 .sr {
@@ -35,8 +59,15 @@
   height: 500px;
   transform: rotate(45deg);
   background-color: rgba(170, 170, 170, 0.9);
-  color: #ffffff;
+  color: #303030;
+  overflow: hidden;
   z-index: 1;
+  transition: .5s ease-in-out;
+}
+
+.sr:hover {
+  background-color: rgba(170, 170, 170, 1);
+  transition: .5s ease-in-out;
 }
 
 .sb {
@@ -51,4 +82,53 @@
   background-color: rgba(255, 109, 46, 0.9);
   color: #303030;
   z-index: 1;
+  transition: .5s ease-in-out;
+}
+
+.sb:hover {
+  background-color: rgba(255, 109, 46, 1);
+  transition: .5s ease-in-out;
+}
+
+.rotate {
+  transform: rotate(-45deg);
+  margin: auto;
+}
+
+.touch {
+  color: #ffffff;
+  margin-top: 110px;
+  margin-left: 60px;
+}
+
+.touch h3 {
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.email, .phone{
+  width: 20px;
+  margin-right: 10px;
+}
+
+#contact .node {
+  stroke: #444;
+  stroke-width: 1.5pt;
+}
+
+#contact .parent-link {
+    fill: none;
+    stroke: #9ecae1;
+    stroke-width: 2px;
+}
+#contact .children-link {
+    fill: none;
+    stroke: #f0f0f0;
+    stroke-width: 1.5px;
+}
+
+#contact-svg-container{
+  width: 1000px;
+  height: 80%;
+  margin: 0px auto;
 }
