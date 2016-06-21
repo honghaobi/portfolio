@@ -11,7 +11,7 @@ $('#sidebar ul li').on('click', function(event){
     showAboutPage();
   } else if ($('#cube').attr('class')==='show-back') {
     showSkillPage();
-  } else if ($('#cube').attr('class')==='show-front') {
+  } else if ($('#cube').attr('class')==='show-right') {
     showContactPage();
   }
 });
@@ -57,8 +57,10 @@ function showContactPage() {
   $('.about-page').hide();
   $('.skills-page').hide();
   $('.contact-page').show();
-  $('.s1').addClass('animated fadeIn');
-  $('.s2').addClass('animated fadeIn');
+  $('.sl').addClass('animated fadeIn');
+  $('.st').addClass('animated fadeIn');
+  $('.sr').addClass('animated fadeIn');
+  $('.sb').addClass('animated fadeIn');
 }
 
 $('.work-page-menu ul li').on('mouseenter', function(event) {

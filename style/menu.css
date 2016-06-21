@@ -116,17 +116,6 @@ ul {
   transition: all 0.5s;
 }
 
-.expand:hover div{
-  color: white;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
-.menu li:hover {
-  background-color: #ff6d2e;
-  transition: all 0.5s;
-}
-
 .menu-top-expand {
   top: 80px;
   background: rgb(255, 255, 255);
