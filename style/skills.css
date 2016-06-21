@@ -29,3 +29,7 @@
   padding: 2%;
   padding-left: 4%;
 }
+
+.d-skill:hover .d1 {
+  color: #ff6d2e;
+}

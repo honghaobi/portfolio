@@ -70,11 +70,6 @@
   transition: .5s ease-in-out;
 }
 
-.sr:hover h2 {
-  color: rgba(255, 109, 46, 1);
-  transition: .5s ease-in-out;
-}
-
 .sb {
   position: absolute;
   top: 50%;
