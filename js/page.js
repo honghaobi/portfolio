@@ -59,6 +59,10 @@ function showWorkPage() {
   $('.skills-page').hide();
   $('.contact-page').hide();
   $('.work-page').show();
+  $('.ng-show').hide();
+  $('.epac-show').hide();
+  $('.vol-show').hide();
+  $('.ymsw-show').hide();
 
   $('.work-page-menu ul li').siblings().removeClass().first().addClass('ng-title');
   $('.ng').siblings().hide();
@@ -130,7 +134,34 @@ $('.work-page-menu ul li').on('click', function(event) {
     $('.ymsw').siblings().removeClass('fadeInDown').addClass('fadeOutDown');
     $('.ymsw').removeClass('fadeOutDown').addClass('animated fadeInDown').show();
   }
+});
 
+$('.ng').on('click', function(event) {
+  $('.ng-show').removeClass('animated slideOutLeft').addClass('animated slideInRight').show();
+});
+$('.ng-close').on('click', function(event) {
+  $('.ng-show').removeClass('animated slideInRight').addClass('animated  slideOutLeft');
+});
+
+$('.epac').on('click', function(event) {
+  $('.epac-show').removeClass('animated slideOutLeft').addClass('animated slideInRight').show();
+});
+$('.epac-close').on('click', function(event) {
+  $('.epac-show').removeClass('animated slideInRight').addClass('animated  slideOutLeft');
+});
+
+$('.vol').on('click', function(event) {
+  $('.vol-show').removeClass('animated slideOutLeft').addClass('animated slideInRight').show();
+});
+$('.vol-close').on('click', function(event) {
+  $('.vol-show').removeClass('animated slideInRight').addClass('animated  slideOutLeft');
+});
+
+$('.ymsw').on('click', function(event) {
+  $('.ymsw-show').removeClass('animated slideOutLeft').addClass('animated slideInRight').show();
+});
+$('.ymsw-close').on('click', function(event) {
+  $('.ymsw-show').removeClass('animated slideInRight').addClass('animated  slideOutLeft');
 });
 
 $('.resume-link').on('click', function(event) {
