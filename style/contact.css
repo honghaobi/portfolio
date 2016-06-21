@@ -18,7 +18,7 @@
   width: 600px;
   height: 600px;
   transform: rotate(45deg);
-  background-color: rgba(170, 170, 170, 0.8);
+  background-color: rgba(170, 170, 170, 0.9);
   color: #303030;
   overflow: hidden;
   z-index: 1;
@@ -70,6 +70,11 @@
   transition: .5s ease-in-out;
 }
 
+.sr:hover h2 {
+  color: rgba(255, 109, 46, 1);
+  transition: .5s ease-in-out;
+}
+
 .sb {
   position: absolute;
   top: 50%;
@@ -112,23 +117,35 @@
 }
 
 #contact .node {
-  stroke: #444;
+  stroke: white;
   stroke-width: 1.5pt;
+}
+
+#contact {
+  cursor: pointer;
 }
 
 #contact .parent-link {
     fill: none;
-    stroke: #9ecae1;
+    stroke: rgba(255, 109, 46, 1);
     stroke-width: 2px;
 }
 #contact .children-link {
     fill: none;
-    stroke: #f0f0f0;
-    stroke-width: 1.5px;
+    stroke: #303030;
+    stroke-width: 2px;
 }
 
 #contact-svg-container{
-  width: 1000px;
-  height: 80%;
-  margin: 0px auto;
+  position: absolute;
+  transform: rotate(-45deg);
+  width: 800px;
+  height: 800px;
+  top: -80px;
+  right: -80px;
+  z-index: 3;
+}
+
+#contact img {
+  border-color: white;
 }

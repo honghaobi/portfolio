@@ -1,3 +1,48 @@
+CV = {
+    contact: {
+        name: 'Henry Bi',
+        cv: 'cv.js',
+        links: [{
+                name: "Mail",
+                icon: "img/social/henry.svg",
+                color: "#ffffff",
+                href: 'mailto:henrybidesign@gmail.com',
+                size: 50
+            }, {
+                name: "Twitter",
+                icon: "img/social/twitter.svg",
+                size: 30,
+                href: 'https://twitter.com/kanyewest',
+                color: "#ff6d2e"
+            }, {
+                name: "Facebook",
+                icon: "img/social/facebook.svg",
+                size: 30,
+                href: 'https://www.facebook.com/profile.php?id=10736578',
+                color: "#ff6d2e"
+            }, {
+                name: "Github",
+                icon: "img/social/github.svg",
+                size: 30,
+                href: 'https://www.github.com/honghaobi',
+                color: "#ff6d2e"
+            }, {
+                name: "Instagram",
+                icon: "img/social/instagram.svg",
+                size: 30,
+                href: 'https://www.instagram.com/henbo9',
+                color: "#ff6d2e"
+            }, {
+                name: "LinkedIn",
+                icon: "img/social/linkedin.svg",
+                size: 30,
+                href: 'https://www.linkedin.com/in/henry-bi-37082226',
+                color: "#ff6d2e"
+            }],
+        passiveLinks: []
+    },
+};
+
 Contact = function() {
 
     var contact = CV.contact;
@@ -31,7 +76,6 @@ Contact = function() {
         if (i == 0) {
             d.x = width / 2;
             d.y = height / 2;
-        //d.fixed = 1;
         } else {
             var angle = 2 * Math.PI * (i - 1) / (_nodes.length - 1);
             d.x = width / 2 + distance * Math.cos(angle)
