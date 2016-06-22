@@ -36,7 +36,7 @@ CV = {
                 name: "LinkedIn",
                 icon: "img/social/linkedin.svg",
                 size: 30,
-                href: 'https://www.linkedin.com/in/henry-bi-37082226',
+                href: 'https://www.linkedin.com/in/henry-bi',
                 color: "#ff6d2e"
             }],
         passiveLinks: []
