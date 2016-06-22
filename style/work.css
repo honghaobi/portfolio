@@ -344,7 +344,7 @@
 .ng-s {
   font-size: 25px;
   text-align: left;
-  left: 30%;
+  left: 25%;
   width: 50%;
   top: 950px;
 }
@@ -383,38 +383,95 @@
 
 .ng-1 {
   width: 90%;
-  top: 1400px;
+  top: 1500px;
 }
 
 .ng-2 {
-  width: 60%;
-  left: 40%;
-  top: 1400px;
-  margin-top: 85%;
+  width: 35%;
+  left: 60%;
+  top: 1500px;
+  margin-top: -30%;
+}
+
+.ng-s2 {
+  font-size: 20px;
+  text-align: center;
+  left: 17%;
+  width: 70%;
+  top: 1500px;
+  margin-top: 50%;
 }
 
 .ng-3 {
-  width: 90%;
-  top: 1400px;
-  margin-top: 45%;
+  width: 80%;
+  left: 10%;
+  top: 1500px;
+  margin-top: 75%;
   z-index: -3;
 }
 
-.ng-4 {
-  right: 0px;
-  width: 60%;
-  top: 4000px;
+.ng-b1 {
+  width: 90%;
+  height: 100%;
+  left: 5%;
+  top: 1500px;
+  margin-top: 70%;
+  background-color: rgba(233, 105, 86, 1);
+  z-index: -2;
 }
 
-.ng-5 {
-  right: 0px;
-  width: 60%;
-  top: 4600px;
+.ng-4 {
+  left: 10%;
+  width: 45%;
+  top: 1500px;
+  margin-top: 130%;
+}
+
+.ng-s3 {
+  font-size: 18px;
+  font-weight: lighter;
+  text-align: justify;
+  right: 10%;
+  width: 32%;
+  top: 1500px;
+  margin-top: 130%;
+}
+
+.ng-7 {
+  width: 90%;
+  top: 1500px;
+  margin-top: 190%;
+}
+
+.ng-7 {
+  width: 90%;
+  top: 1500px;
+  left: 5%;
+  margin-top: 175%;
+}
+
+.ng-c1 {
+  width: 300px;
+  height: 300px;
+  background-color: red;
+  top: 1500px;
+  left: 5%;
+  margin-top: 230%;
+}
+
+.ng-c2 {
+  width: 300px;
+  height: 300px;
+  background-color: blue;
+  top: 1500px;
+  left: 45%;
+  margin-top: 230%;
 }
 
 .ng-6 {
-  width: 70%;
-  top: 5000px;
+  width: 90%;
+  top: 1500px;
+  margin-top: 270%;
 }
 
 .epac-show {
