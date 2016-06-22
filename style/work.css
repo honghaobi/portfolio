@@ -266,6 +266,8 @@
   transform: rotate(0deg);
 }
 
+/*------------------------------------------------------------*/
+
 .title-sub {
   position: absolute;
   right: 0px;
@@ -273,6 +275,7 @@
   margin-left: 10%;
   margin-right: 40%;
   font-size: 40px;
+  font-weight: lighter;
 }
 
 .ng-show {
@@ -288,6 +291,15 @@
   padding: 5%;
 }
 
+.ng-show img {
+  position: absolute;
+  z-index: -1;
+}
+
+.ng-show div {
+  position: absolute;
+}
+
 .ng-close {
   position: fixed;
   top: 30px;
@@ -300,26 +312,107 @@
   font-size: 80px;
 }
 
-.ng-a {
+.ng-vw {
   position: absolute;
-  z-index: 1;
+  width: 150px;
+  padding: 1%;
+  left: 40%;
+  background-color: rgba(85, 173, 182, 0.8);
+  transition: .5s ease-in-out;
+  color: white;
+}
+
+.ng-vw:hover {
+  background-color: rgba(85, 173, 182, 1);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+.ng-x {
+  z-index: 1 !important;
   width: 60%;
-  right: 15%;
+  left: 5%;
   top: 400px;
 }
 
 .ng-0 {
-  position: absolute;
-  z-index: -1;
-  width: 60%;
+  width: 50%;
   right: 10%;
   top: 50px;
 }
+
+.ng-s {
+  font-size: 25px;
+  text-align: left;
+  left: 30%;
+  width: 50%;
+  top: 950px;
+}
+
+.ng-th {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgba(85, 173, 182, 1);
+}
+
+.ng-t1 {
+  color: rgba(170, 170, 170, 1);
+  font-size: 20px;
+  font-weight: lighter;
+  text-align: right;
+  right: 50%;
+  width: 30%;
+  top: 1060px;
+  list-style: none;
+}
+
+.ng-t1 ul{
+  text-align: right;
+}
+
+.ng-t2 {
+  color: rgba(170, 170, 170, 1);
+  font-size: 20px;
+  font-weight: lighter;
+  text-align: left;
+  left: 50%;
+  width: 30%;
+  top: 1060px;
+  list-style: none;
+}
+
 .ng-1 {
-  position: absolute;
-  z-index: -1;
-  width: 80%;
-  top: 1000px;
+  width: 90%;
+  top: 1400px;
+}
+
+.ng-2 {
+  width: 50%;
+  top: 1400px;
+  margin-top: 44%;
+}
+
+.ng-3 {
+  left: 0px;
+  width: 50%;
+  top: 2600px;
+}
+
+.ng-4 {
+  right: 0px;
+  width: 40%;
+  top: 2900px;
+}
+
+.ng-5 {
+  right: 0px;
+  width: 60%;
+  top: 2800px;
+}
+
+.ng-6 {
+  width: 70%;
+  top: 3500px;
 }
 
 .epac-show {
