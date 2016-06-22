@@ -266,6 +266,13 @@
   transform: rotate(0deg);
 }
 
+#arrow {
+  width: 50px;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+}
+
 /*------------------------------------------------------------*/
 
 .title-sub {
@@ -312,14 +319,36 @@
   font-size: 80px;
 }
 
+.ng-vg {
+  text-decoration: none;
+  width: 50px;
+  height: 50px;
+  right: 60%;
+  background-color: rgba(60, 60, 60, 0.8);
+  transition: .5s ease-in-out;
+  color: white;
+  cursor: pointer;
+}
+
+.ng-vg:hover {
+  background-color: rgba(60, 60, 60, 1);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
 .ng-vw {
   position: absolute;
+  text-decoration: none;
+  font-weight: lighter;
   width: 150px;
-  padding: 1%;
+  height: 50px;
+  padding-top: 18px;
+  padding-left: 20px;
   left: 40%;
   background-color: rgba(85, 173, 182, 0.8);
   transition: .5s ease-in-out;
   color: white;
+  cursor: pointer;
 }
 
 .ng-vw:hover {
@@ -412,11 +441,11 @@
 
 .ng-b1 {
   width: 90%;
-  height: 100%;
+  height: 1200px;
   left: 5%;
   top: 1500px;
   margin-top: 70%;
-  background-color: rgba(233, 105, 86, 1);
+  background-color: rgba(233, 105, 86, 0.5);
   z-index: -2;
 }
 
@@ -425,6 +454,7 @@
   width: 45%;
   top: 1500px;
   margin-top: 130%;
+  box-shadow: 18px 18px 0px 1px #55adb6;
 }
 
 .ng-s3 {
@@ -440,38 +470,95 @@
 .ng-7 {
   width: 90%;
   top: 1500px;
-  margin-top: 190%;
-}
-
-.ng-7 {
-  width: 90%;
-  top: 1500px;
   left: 5%;
   margin-top: 175%;
 }
 
 .ng-c1 {
-  width: 300px;
-  height: 300px;
-  background-color: red;
+  width: 200px;
+  height: 200px;
+  background-color: #e96956;
   top: 1500px;
-  left: 5%;
-  margin-top: 230%;
+  left: 20%;
+  margin-top: 240%;
+  padding-top: 150px;
+  text-align: right;
+  font-size: 55px;
+  color: white;
 }
 
 .ng-c2 {
-  width: 300px;
-  height: 300px;
-  background-color: blue;
+  width: 200px;
+  height: 200px;
+  background-color: #55adb6;
+  top: 1500px;
+  left: 30%;
+  margin-top: 230%;
+  padding-top: 150px;
+  text-align: right;
+  font-size: 55px;
+  color: white;
+}
+
+@font-face {
+    font-family: 'raleway-regular';
+    src: url('../style/fonts/raleway-regular.eot');
+    src: url('../style/fonts/raleway-regular.eot?#iefix') format('embedded-opentype'),
+         url('../style/fonts/raleway-regular.woff') format('woff'),
+         url('../style/fonts/raleway-regular.ttf') format('truetype'),
+         url('../style/fonts/raleway-regular.svg#RalewayRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'lato-light';
+    src: url('../style/fonts/lato-light.eot');
+    src: url('../style/fonts/lato-light.eot?#iefix') format('embedded-opentype'),
+         url('../style/fonts/lato-light.woff') format('woff'),
+         url('../style/fonts/lato-light.ttf') format('truetype'),
+         url('../style/fonts/lato-light.svg#LatoLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.ng-f1 {
+  font-family: 'lato-light';
+  font-size: 100px;
   top: 1500px;
   left: 45%;
-  margin-top: 230%;
+  margin-top: 245%;
+}
+
+.ng-f1 h3 {
+  margin-top: -20px;
+  font-size: 25px;
+  text-align: right;
+  color: rgba(170, 170, 170, 1);
+}
+
+.ng-f2 {
+  font-family: 'raleway-regular';
+  font-size: 100px;
+  top: 1500px;
+  left: 35%;
+  margin-top: 255%;
+}
+
+.ng-f2 h3 {
+  margin-top: -20px;
+  font-size: 25px;
+  text-align: right;
+  color: rgba(170, 170, 170, 1);
 }
 
 .ng-6 {
   width: 90%;
   top: 1500px;
   margin-top: 270%;
+  margin-bottom: 50px;
 }
 
 .epac-show {
