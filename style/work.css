@@ -1,3 +1,29 @@
+@import url(https://fonts.googleapis.com/css?family=Pragati+Narrow);
+
+@font-face {
+    font-family: 'raleway-regular';
+    src: url('../style/fonts/raleway-regular.eot');
+    src: url('../style/fonts/raleway-regular.eot?#iefix') format('embedded-opentype'),
+         url('../style/fonts/raleway-regular.woff') format('woff'),
+         url('../style/fonts/raleway-regular.ttf') format('truetype'),
+         url('../style/fonts/raleway-regular.svg#RalewayRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'lato-light';
+    src: url('../style/fonts/lato-light.eot');
+    src: url('../style/fonts/lato-light.eot?#iefix') format('embedded-opentype'),
+         url('../style/fonts/lato-light.woff') format('woff'),
+         url('../style/fonts/lato-light.ttf') format('truetype'),
+         url('../style/fonts/lato-light.svg#LatoLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 .work-page-menu {
   position: absolute;
   top: 50%;
@@ -501,30 +527,6 @@
   color: white;
 }
 
-@font-face {
-    font-family: 'raleway-regular';
-    src: url('../style/fonts/raleway-regular.eot');
-    src: url('../style/fonts/raleway-regular.eot?#iefix') format('embedded-opentype'),
-         url('../style/fonts/raleway-regular.woff') format('woff'),
-         url('../style/fonts/raleway-regular.ttf') format('truetype'),
-         url('../style/fonts/raleway-regular.svg#RalewayRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'lato-light';
-    src: url('../style/fonts/lato-light.eot');
-    src: url('../style/fonts/lato-light.eot?#iefix') format('embedded-opentype'),
-         url('../style/fonts/lato-light.woff') format('woff'),
-         url('../style/fonts/lato-light.ttf') format('truetype'),
-         url('../style/fonts/lato-light.svg#LatoLight') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
 .ng-f1 {
   font-family: 'lato-light';
   font-size: 100px;
@@ -753,13 +755,14 @@
 .vol-show {
   background-color: rgba(255, 255, 255, 1);
   position: absolute;
+  overflow: scroll;
   top: 0;
   left: 0;
   width: 100%;
-  height: 4000px;
-  overflow: scroll;
+  height: 100vh;
+  color: #303030;
   z-index: 4;
-  padding: 10%;
+  padding: 5%;
 }
 
 .vol-close {
@@ -769,16 +772,193 @@
   z-index: 5;
 }
 
+.vol-show img {
+  position: absolute;
+  z-index: -1;
+}
+
+.vol-show div {
+  position: absolute;
+}
+
+.vol-close {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  z-index: 5;
+}
+
+.vol-title-show {
+  color: rgba(46, 204, 113, 1);
+  font-size: 80px;
+}
+
+.vol-vg {
+  text-decoration: none;
+  width: 50px;
+  height: 50px;
+  right: 60%;
+  background-color: rgba(60, 60, 60, 0.8);
+  transition: .5s ease-in-out;
+  color: white;
+  cursor: pointer;
+}
+
+.vol-vg:hover {
+  background-color: rgba(60, 60, 60, 1);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+.vol-vw {
+  position: absolute;
+  text-decoration: none;
+  font-weight: lighter;
+  width: 150px;
+  height: 50px;
+  padding-top: 18px;
+  padding-left: 20px;
+  left: 40%;
+  background-color: rgba(46, 204, 113, 0.8);
+  transition: .5s ease-in-out;
+  color: white;
+  cursor: pointer;
+}
+
+.vol-vw:hover {
+  background-color: rgba(46, 204, 113, 1);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+.vol-x {
+  z-index: 1 !important;
+  width: 60%;
+  left: 5%;
+  top: 400px;
+}
+
+.vol-s {
+  font-size: 25px;
+  text-align: left;
+  left: 25%;
+  width: 60%;
+  top: 950px;
+}
+
+.vol-0 {
+  width: 50%;
+  right: 10%;
+  top: 50px;
+}
+
+.vol-th {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgba(46, 204, 113, 1);
+}
+
+.vol-t1 {
+  color: rgba(170, 170, 170, 1);
+  font-size: 20px;
+  font-weight: lighter;
+  text-align: right;
+  right: 50%;
+  width: 30%;
+  top: 1120px;
+  list-style: none;
+}
+
+.vol-t1 ul{
+  text-align: right;
+}
+
+.vol-t2 {
+  color: rgba(170, 170, 170, 1);
+  font-size: 20px;
+  font-weight: lighter;
+  text-align: left;
+  left: 50%;
+  width: 30%;
+  top: 1120px;
+  list-style: none;
+}
+
+.vol-1 {
+  width: 70%;
+  top: 1400px;
+  left: 15%;
+}
+
+.vol-c1 {
+  width: 200px;
+  height: 200px;
+  background-color: #2ecc71;
+  top: 1400px;
+  left: 20%;
+  margin-top: 45%;
+  padding-top: 150px;
+  text-align: right;
+  font-size: 55px;
+  color: white;
+}
+
+.vol-c2 {
+  width: 200px;
+  height: 200px;
+  background-color: #306166;
+  top: 1400px;
+  left: 30%;
+  margin-top: 40%;
+  padding-top: 150px;
+  text-align: right;
+  font-size: 55px;
+  color: white;
+}
+
+.vol-f1 {
+  font-family: 'Pragati Narrow', sans-serif;
+  font-size: 100px;
+  top: 1400px;
+  left: 40%;
+  margin-top: 55%;
+}
+
+.vol-f1 h3 {
+  margin-top: -20px;
+  font-size: 25px;
+  text-align: right;
+  color: rgba(170, 170, 170, 1);
+}
+
+.vol-s2 {
+  font-size: 20px;
+  text-align: right;
+  left: 15%;
+  margin-top: 70%;
+  top: 1400px;
+  width: 35%;
+}
+
+.vol-2 {
+  width: 70%;
+  top: 1400px;
+  margin-top: 80%;
+  left: 15%;
+  margin-bottom: 50px;
+}
+
 .ymsw-show {
   background-color: rgba(255, 255, 255, 1);
   position: absolute;
+  overflow: scroll;
   top: 0;
   left: 0;
   width: 100%;
-  height: 4000px;
-  overflow: scroll;
+  height: 100vh;
+  color: #303030;
   z-index: 4;
-  padding: 10%;
+  padding: 5%;
 }
 
 .ymsw-close {
