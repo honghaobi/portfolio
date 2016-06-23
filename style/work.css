@@ -667,7 +667,7 @@
   top: 1150px;
   width: 80%;
   height: 1200px;
-  background-color: rgba(0, 0, 0, 0.04);
+  background-color: rgba(0, 0, 0, 0.05);
   z-index: -2;
 }
 
@@ -690,7 +690,63 @@
   top: 1200px;
   margin-top: 95%;
   left: 20%;
-  box-shadow: 18px 18px 0px 1px rgba(255, 109, 46, 1);
+  box-shadow: 18px 18px 0px 1px rgba(111, 111, 111, 1);
+}
+
+.epac-c1 {
+  width: 200px;
+  height: 200px;
+  background-color: #ff6400;
+  top: 1200px;
+  right: 20%;
+  margin-top: 130%;
+  padding-top: 150px;
+  text-align: right;
+  font-size: 55px;
+  color: white;
+}
+
+.epac-c2 {
+  width: 200px;
+  height: 200px;
+  background-color: #c9c9c9;
+  top: 1200px;
+  right: 30%;
+  margin-top: 125%;
+  padding-top: 150px;
+  text-align: right;
+  font-size: 55px;
+  color: white;
+}
+
+.epac-f1 {
+  font-family: 'raleway-regular';
+  font-size: 100px;
+  top: 1200px;
+  right: 40%;
+  margin-top: 140%;
+}
+
+.epac-f1 h3 {
+  margin-top: -20px;
+  font-size: 25px;
+  text-align: right;
+  color: rgba(170, 170, 170, 1);
+}
+
+.epac-5 {
+  width: 60%;
+  top: 1200px;
+  margin-top: 155%;
+  right: 10%;
+}
+
+.epac-6 {
+  width: 60%;
+  top: 1200px;
+  margin-top: 190%;
+  left: 10%;
+  margin-bottom: 50px;
 }
 
 
