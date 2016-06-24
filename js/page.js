@@ -1,4 +1,7 @@
-showHomePage();
+$(window).load(function() {
+  $('.loader-page').addClass('animated fadeOut');
+  showHomePage();
+});
 
 $('#sidebar ul li').on('click', function(event){
 

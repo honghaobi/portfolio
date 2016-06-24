@@ -1,0 +1,106 @@
+.loader-page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 109, 46, 1);
+  z-index: 10;
+}
+
+.loader {
+  margin: 0 auto;
+  margin-top: 45vh;
+  max-width: 60px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.box {
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  position: relative;
+}
+
+.box1 {
+  -webkit-animation: boxanim1 3s infinite;
+  animation: boxanim1 3s infinite;
+}
+
+.box2 {
+  bottom: 30px;
+  left: 30px;
+  -webkit-animation: boxanim2 3s infinite;
+  animation: boxanim2 3s infinite;
+}
+
+.box3 {
+  bottom: 30px;
+  left: 30px;
+  -webkit-animation: boxanim3 3s infinite;
+  animation: boxanim3 3s infinite;
+}
+
+.box4 {
+  bottom: 60px;
+  -webkit-animation: boxanim4 3s infinite;
+  animation: boxanim4 3s infinite;
+}
+
+@-webkit-keyframes boxanim1 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes boxanim2 {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes boxanim3 {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes boxanim4 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
