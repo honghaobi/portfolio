@@ -1,5 +1,5 @@
 $(window).load(function() {
-  $('.loader-page').addClass('animated fadeOut');
+  $('.loader-page').addClass('animated fadeOut').hide();
   showHomePage();
 });
 
