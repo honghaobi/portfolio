@@ -31,7 +31,7 @@
   right: 50%;
   width: 600px;
   height: 600px;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.7);
   color: #303030;
   z-index: 2;
   padding: 130px 130px 0 0;
@@ -175,6 +175,47 @@
 }
 
 .vol:hover img{
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.nf-title {
+  color: rgba(33, 153, 232, 1);
+}
+
+.nf {
+  position: absolute;
+  top: 50%;
+  margin-top: -300px;
+  left: 50%;
+  width: 600px;
+  height: 600px;
+  background-color: rgba(33, 153, 232, 0.8);
+  z-index: 2;
+  overflow: hidden;
+  transition: .5s ease-in-out;
+}
+
+.nf:hover {
+  background-color: rgba(33, 153, 232, 1);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+.nf img {
+  position: absolute;
+  width: 800px;
+  top: 100px;
+  left: 10px;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.nf:hover img{
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
   -webkit-transition: .5s ease-in-out;

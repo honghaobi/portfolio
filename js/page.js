@@ -132,6 +132,10 @@ $('.work-page-menu ul li').on('click', function(event) {
     selected.addClass('vol-title');
     $('.vol').siblings().removeClass('fadeInDown').addClass('fadeOutDown');
     $('.vol').removeClass('fadeOutDown').addClass('animated fadeInDown').show();
+  } else if (selected.html() === 'NERDFLIRT') {
+    selected.addClass('nf-title');
+    $('.nf').siblings().removeClass('fadeInDown').addClass('fadeOutDown');
+    $('.nf').removeClass('fadeOutDown').addClass('animated fadeInDown').show();
   } else if (selected.html() === 'YMSW') {
     selected.addClass('ymsw-title');
     $('.ymsw').siblings().removeClass('fadeInDown').addClass('fadeOutDown');
