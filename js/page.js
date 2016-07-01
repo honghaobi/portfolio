@@ -51,21 +51,12 @@ $('#cube .front').on('click', function(event) {
 });
 
 function showHomePage() {
-  $('.work-page').hide();
-  $('.about-page').hide();
-  $('.skills-page').hide();
-  $('.contact-page').hide();
+  $('.work-page, .about-page, .skills-page, .contact-page').hide();
 }
 
 function showWorkPage() {
-  $('.about-page').hide();
-  $('.skills-page').hide();
-  $('.contact-page').hide();
+  $('.about-page, .skills-page, .contact-page, .ng-show, .epac-show, .vol-show, .ymsw-show').hide();
   $('.work-page').show();
-  $('.ng-show').hide();
-  $('.epac-show').hide();
-  $('.vol-show').hide();
-  $('.ymsw-show').hide();
 
   $('.work-page-menu ul li').siblings().removeClass().first().addClass('ng-title');
   $('.ng').siblings().hide();
@@ -74,32 +65,22 @@ function showWorkPage() {
 }
 
 function showAboutPage() {
-  $('.work-page').hide();
-  $('.skills-page').hide();
-  $('.contact-page').hide();
+  $('.work-page, .skills-page, .contact-page').hide();
   $('.about-page').show();
   $('.about-page-img').addClass('animated fadeInLeft');
   $('.about-page-text').addClass('animated fadeInRight');
 }
 
 function showSkillPage() {
-  $('.work-page').hide();
-  $('.about-page').hide();
-  $('.contact-page').hide();
+  $('.work-page, .about-page, .contact-page').hide();
   $('.skills-page').show();
-  $('.d-skill').addClass('animated zoomIn');
-  $('.p-skill').addClass('animated zoomIn');
+  $('.d-skill, .p-skill').addClass('animated zoomIn');
 }
 
 function showContactPage() {
-  $('.work-page').hide();
-  $('.about-page').hide();
-  $('.skills-page').hide();
+  $('.work-page, .about-page, .skills-page').hide();
   $('.contact-page').show();
-  $('.sl').addClass('animated fadeIn');
-  $('.st').addClass('animated fadeIn');
-  $('.sr').addClass('animated fadeIn');
-  $('.sb').addClass('animated fadeIn');
+  $('.sl, .st, .sr, .sb').addClass('animated fadeIn');
   Contact();
 }
 
@@ -143,32 +124,44 @@ $('.work-page-menu ul li').on('click', function(event) {
   }
 });
 
+$('.arrow').on('click', function(event) {
+  $('.work-page').children().animate({ scrollTop: 0 }, 'slow');
+});
+
 $('.ng').on('click', function(event) {
   $('.ng-show').removeClass('animated slideOutLeft').addClass('animated slideInRight').show();
+  $('.ng-close, .arrow').insertBefore('.work-page').addClass('animated slideInUp');
 });
 $('.ng-close').on('click', function(event) {
   $('.ng-show').removeClass('animated slideInRight').addClass('animated  slideOutLeft');
+  $('.ng-close, .arrow').appendTo('.ng-show');
 });
 
 $('.epac').on('click', function(event) {
   $('.epac-show').removeClass('animated slideOutLeft').addClass('animated slideInRight').show();
+  $('.epac-close, .arrow').insertBefore('.work-page').addClass('animated slideInUp');
 });
 $('.epac-close').on('click', function(event) {
   $('.epac-show').removeClass('animated slideInRight').addClass('animated  slideOutLeft');
+  $('.epac-close, .arrow').appendTo('.ng-show');
 });
 
 $('.vol').on('click', function(event) {
   $('.vol-show').removeClass('animated slideOutLeft').addClass('animated slideInRight').show();
+  $('.vol-close, .arrow').insertBefore('.work-page').addClass('animated slideInUp');
 });
 $('.vol-close').on('click', function(event) {
   $('.vol-show').removeClass('animated slideInRight').addClass('animated  slideOutLeft');
+  $('.vol-close, .arrow').appendTo('.ng-show');
 });
 
 $('.ymsw').on('click', function(event) {
   $('.ymsw-show').removeClass('animated slideOutLeft').addClass('animated slideInRight').show();
+  $('.ymsw-close, .arrow').insertBefore('.work-page').addClass('animated slideInUp');
 });
 $('.ymsw-close').on('click', function(event) {
   $('.ymsw-show').removeClass('animated slideInRight').addClass('animated  slideOutLeft');
+  $('.ymsw-close, .arrow').appendTo('.ng-show');
 });
 
 $('.resume-link').on('click', function(event) {
