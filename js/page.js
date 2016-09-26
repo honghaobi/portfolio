@@ -55,12 +55,12 @@ function showHomePage() {
 }
 
 function showWorkPage() {
-  $('.about-page, .skills-page, .contact-page, .ng-show, .epac-show, .vol-show, .ymsw-show').hide();
+  $('.about-page, .skills-page, .contact-page, .up-show, .ng-show, .epac-show, .vol-show, .ymsw-show').hide();
   $('.work-page').show();
 
-  $('.work-page-menu ul li').siblings().removeClass().first().addClass('ng-title');
-  $('.ng').siblings().hide();
-  $('.ng').removeClass('fadeOutDown').addClass('animated fadeInDown').show();
+  $('.work-page-menu ul li').siblings().removeClass().first().addClass('up-title');
+  $('.up').siblings().hide();
+  $('.up').removeClass('fadeOutDown').addClass('animated fadeInDown').show();
   $('.work-page-menu').addClass('animated fadeInUp');
 }
 
@@ -96,15 +96,14 @@ $('.work-page-menu ul li').on('click', function(event) {
   var selected = $(this);
 
   selected.siblings().removeClass();
-
-  if (selected.html() === 'NEIGHBORGOOD') {
+  if (selected.html() === 'UP UP &amp; AWAY') {
+    selected.addClass('up-title');
+    $('.up').siblings().removeClass('fadeInDown').addClass('fadeOutDown');
+    $('.up').removeClass('fadeOutDown').addClass('animated fadeInDown').show();
+  } else if (selected.html() === 'NEIGHBORGOOD') {
     selected.addClass('ng-title');
     $('.ng').siblings().removeClass('fadeInDown').addClass('fadeOutDown');
     $('.ng').removeClass('fadeOutDown').addClass('animated fadeInDown').show();
-  } else if (selected.html() === 'LEAF IT') {
-    selected.addClass('leaf-title');
-    $('.leaf').siblings().removeClass('fadeInDown').addClass('fadeOutDown');
-    $('.leaf').removeClass('fadeOutDown').addClass('animated fadeInDown').show();
   } else if (selected.html() === 'EPAC') {
     selected.addClass('epac-title');
     $('.epac').siblings().removeClass('fadeInDown').addClass('fadeOutDown');
@@ -128,39 +127,44 @@ $('.arrow').on('click', function(event) {
   $('.work-page').children().animate({ scrollTop: 0 }, 'slow');
 });
 
+$('.up').on('click', function(event) {
+  $('.up-show').removeClass('animated slideOutLeft').addClass('animated slideInRight').show();
+  $('.up-close, .arrow').insertBefore('.work-page').addClass('animated slideInUp');
+});
+$('.up-close').on('click', function(event) {
+  $('.up-show').removeClass('animated slideInRight').addClass('animated slideOutLeft');
+  $('.up-close, .arrow').appendTo('.up-show');
+});
 $('.ng').on('click', function(event) {
   $('.ng-show').removeClass('animated slideOutLeft').addClass('animated slideInRight').show();
   $('.ng-close, .arrow').insertBefore('.work-page').addClass('animated slideInUp');
 });
 $('.ng-close').on('click', function(event) {
-  $('.ng-show').removeClass('animated slideInRight').addClass('animated  slideOutLeft');
+  $('.ng-show').removeClass('animated slideInRight').addClass('animated slideOutLeft');
   $('.ng-close, .arrow').appendTo('.ng-show');
 });
-
 $('.epac').on('click', function(event) {
   $('.epac-show').removeClass('animated slideOutLeft').addClass('animated slideInRight').show();
   $('.epac-close, .arrow').insertBefore('.work-page').addClass('animated slideInUp');
 });
 $('.epac-close').on('click', function(event) {
-  $('.epac-show').removeClass('animated slideInRight').addClass('animated  slideOutLeft');
+  $('.epac-show').removeClass('animated slideInRight').addClass('animated slideOutLeft');
   $('.epac-close, .arrow').appendTo('.ng-show');
 });
-
 $('.vol').on('click', function(event) {
   $('.vol-show').removeClass('animated slideOutLeft').addClass('animated slideInRight').show();
   $('.vol-close, .arrow').insertBefore('.work-page').addClass('animated slideInUp');
 });
 $('.vol-close').on('click', function(event) {
-  $('.vol-show').removeClass('animated slideInRight').addClass('animated  slideOutLeft');
+  $('.vol-show').removeClass('animated slideInRight').addClass('animated slideOutLeft');
   $('.vol-close, .arrow').appendTo('.ng-show');
 });
-
 $('.ymsw').on('click', function(event) {
   $('.ymsw-show').removeClass('animated slideOutLeft').addClass('animated slideInRight').show();
   $('.ymsw-close, .arrow').insertBefore('.work-page').addClass('animated slideInUp');
 });
 $('.ymsw-close').on('click', function(event) {
-  $('.ymsw-show').removeClass('animated slideInRight').addClass('animated  slideOutLeft');
+  $('.ymsw-show').removeClass('animated slideInRight').addClass('animated slideOutLeft');
   $('.ymsw-close, .arrow').appendTo('.ng-show');
 });
 

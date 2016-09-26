@@ -35,6 +35,6 @@ body {
 #canvas {
   margin: 0;
   padding: 0;
-  opacity: 0.07;
+  opacity: 0.08;
   z-index: -1;
 }
