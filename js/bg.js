@@ -1,6 +1,5 @@
 var container;
 var camera, scene, renderer;
-
 var geometry, group;
 
 var mouseX = 0,
@@ -15,9 +14,8 @@ init();
 animate();
 
 function init() {
-
-    container = document.createElement('div');
-    $("#canvas").html(container);
+    container = document.createElement( 'div' );
+    document.body.appendChild( container );
 
     var theme = {
         name: "cubes",
@@ -80,10 +78,8 @@ function init() {
 function onWindowResize() {
     windowHalfX = window.innerWidth / 2;
     windowHalfY = window.innerHeight / 2;
-
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
-
     renderer.setSize(window.innerWidth, window.innerHeight);
 }
 
@@ -94,7 +90,6 @@ function onDocumentMouseMove(event) {
 
 function animate() {
     requestAnimationFrame(animate);
-
     render();
 }
 
@@ -108,10 +103,7 @@ function render() {
 
     camera.position.x += (mouseX * 0.1 - camera.position.x) * .05;
     camera.position.y += (mouseY * 0.2 - camera.position.y) * .05;
-
-
     camera.lookAt(scene.position);
-
 
     group.rotation.x = rx / 15;
     group.rotation.y = ry / 15;
