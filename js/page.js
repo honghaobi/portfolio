@@ -1,5 +1,6 @@
 $(window).load(function() {
   $('.loader-page').addClass('animated fadeOut').hide();
+  lazyload();
   showHomePage();
 });
 
