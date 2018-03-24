@@ -57,7 +57,6 @@ function showHomePage() {
 function showWorkPage() {
   $('.about-page, .skills-page, .contact-page, .up-show, .ng-show, .epac-show, .vol-show, .ymsw-show').hide();
   $('.work-page').show();
-
   $('.work-page-menu ul li').siblings().removeClass().first().addClass('up-title');
   $('.up').siblings().hide();
   $('.up').removeClass('fadeOutDown').addClass('animated fadeInDown').show();
