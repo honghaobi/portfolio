@@ -1,113 +1,122 @@
-var container;
-var camera, scene, renderer;
-var geometry, group;
-
-var mouseX = 0,
-    mouseY = 0;
-
-var windowHalfX = window.innerWidth / 2;
-var windowHalfY = window.innerHeight / 2;
-
-document.addEventListener('mousemove', onDocumentMouseMove, false);
+var container, stats;
+var camera, scene, raycaster, renderer;
+var mouse = new THREE.Vector2(), INTERSECTED;
+var radius = 100, theta = 0;
+var timer;
+var timeStart = Date.now() * 0.001;
 
 init();
 animate();
 
 function init() {
-    container = document.createElement( 'div' );
-    document.body.appendChild( container );
+	container = document.createElement( 'div' );
+	document.body.appendChild( container );
 
-    var theme = {
-        name: "cubes",
-        geometry: new THREE.CubeGeometry(40, 40, 40),
-        color: 0x3f3f3f,
-        lightColor: 0xffffff,
-        cameraZ: 800,
-        createObjects: function() {
-            for (var i = 0; i < 2000; i++) {
-                var mesh = new THREE.Mesh(theme.geometry, material);
-                mesh.position.x = Math.random() * 2000 - 1000;
-                mesh.position.y = Math.random() * 2000 - 1000;
-                mesh.position.z = Math.random() * 2000 - 1000;
+	camera = new THREE.PerspectiveCamera( 60, window.innerWidth / window.innerHeight, 1, 10000 );
+  camera.position.x = 8000;
 
-                mesh.rotation.x = Math.random() * 2 * Math.PI;
-                mesh.rotation.y = Math.random() * 2 * Math.PI;
+	scene = new THREE.Scene();
+	scene.background = new THREE.Color( 0xf0f0f0 );
 
-                mesh.matrixAutoUpdate = false;
-                mesh.updateMatrix();
+	var light = new THREE.DirectionalLight( 0xffffff, 1 );
+	light.position.set( 1, 1, 1 ).normalize();
+	scene.add( light );
 
-                group.add(mesh);
-            }
-        }
-    };
+  var pointLight = new THREE.DirectionalLight(0xffffff);
+  pointLight.position.x = 20;
+  pointLight.position.y = 120;
+  pointLight.position.z = 0;
+  scene.add(pointLight);
 
-    scene = new THREE.Scene();
-    scene.fog = new THREE.Fog(0xF5F5F5, 1, 10000);
+	var geometry = new THREE.BoxBufferGeometry( 40, 40, 40 );
+	for ( var i = 0; i < 2000; i ++ ) {
+		var object = new THREE.Mesh( geometry, new THREE.MeshLambertMaterial( { color: 0x3f3f3f } ) );
+		object.position.x = Math.random() * 2000 - 1000;
+		object.position.y = Math.random() * 2000 - 1000;
+		object.position.z = Math.random() * 2000 - 1000;
 
-    var material = new THREE.MeshLambertMaterial({
-        emissive: theme.color
-    });
+		// object.rotation.x = Math.random() * 2 * Math.PI;
+		// object.rotation.y = Math.random() * 2 * Math.PI;
+		// object.rotation.z = Math.random() * 2 * Math.PI;
 
-    group = new THREE.Group();
+		scene.add( object );
+	}
+	raycaster = new THREE.Raycaster();
+	renderer = new THREE.WebGLRenderer();
 
-    theme.createObjects();
-    scene.add(group);
+  renderer.setClearColor(0xF5F5F5);
+	renderer.setPixelRatio( window.devicePixelRatio );
+	renderer.setSize( window.innerWidth, window.innerHeight );
+  renderer.sortObjects = false;
 
-    camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 1, 10000);
-    camera.position.z = theme.cameraZ;
+	container.appendChild(renderer.domElement);
 
-    var pointLight = new THREE.DirectionalLight(theme.lightColor);
-    pointLight.position.x = 20;
-    pointLight.position.y = 120;
-    pointLight.position.z = 0;
-    scene.add(pointLight);
-
-    renderer = new THREE.WebGLRenderer({
-        antialias: true
-    });
-    renderer.setClearColor(0xF5F5F5);
-    renderer.setPixelRatio(window.devicePixelRatio);
-    renderer.setSize(window.innerWidth, window.innerHeight);
-    renderer.sortObjects = false;
-
-    container.appendChild(renderer.domElement);
-    window.addEventListener('resize', onWindowResize, false);
+	document.addEventListener( 'mousemove', onDocumentMouseMove, false );
+	window.addEventListener( 'resize', onWindowResize, false );
 }
-
 
 function onWindowResize() {
-    windowHalfX = window.innerWidth / 2;
-    windowHalfY = window.innerHeight / 2;
-    camera.aspect = window.innerWidth / window.innerHeight;
-    camera.updateProjectionMatrix();
-    renderer.setSize(window.innerWidth, window.innerHeight);
+	camera.aspect = window.innerWidth / window.innerHeight;
+	camera.updateProjectionMatrix();
+	renderer.setSize( window.innerWidth, window.innerHeight );
 }
 
-function onDocumentMouseMove(event) {
-    mouseX = (event.clientX - windowHalfX) * 1;
-    mouseY = (event.clientY - windowHalfY) * 1;
+function onDocumentMouseMove( event ) {
+	event.preventDefault();
+	mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
+	mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
 }
-
+//
 function animate() {
-    requestAnimationFrame(animate);
-    render();
+	requestAnimationFrame( animate );
+	render();
+}
+
+function easeInOut(t, b, c, d) {
+  if((t /= d / 2) < 1){
+    return c / 2 * t * t * t * t * t + b;
+  }
+  return c / 2 * ((t -= 2) * t * t * t * t + 2) + b;
+}
+
+
+function Zoom(aTimer) {
+  if (camera.position.x > 500) {
+    camera.position.x = easeInOut(aTimer, 8000, -8000, 6);
+    console.log(easeInOut(aTimer, 8000, -8000, 6));
+  }
+
 }
 
 function render() {
+  timer = Date.now() * 0.001 - timeStart;
+  // console.log(timer, camera.position.x);
 
-    var time = Date.now() * 0.001;
+    Zoom(timer);
 
-    var rx = Math.sin(time * 0.3) * 0.5,
-        ry = Math.sin(time * 0.3) * 0.5,
-        rz = Math.sin(time * 0.3) * 0.5;
+  // camera.position.x -= (mouse.x * 0.1 - camera.position.x) * .05;
+  // camera.position.y -= (mouse.y * 0.1 - camera.position.y) * .05;
+  // camera.position.z -= (mouse.y * 0.1 - camera.position.y) * .05;
 
-    camera.position.x += (mouseX * 0.1 - camera.position.x) * .05;
-    camera.position.y += (mouseY * 0.2 - camera.position.y) * .05;
-    camera.lookAt(scene.position);
+  // camera.position.x += (mouse.x * 0.1 - camera.position.x) * .05;
+  camera.position.y += (mouse.y * 0.2 - camera.position.y) * .05;
 
-    group.rotation.x = rx / 15;
-    group.rotation.y = ry / 15;
-    group.rotation.z = rz / 15;
+  camera.lookAt(scene.position);
+  camera.updateMatrixWorld();
 
-    renderer.render(scene, camera);
+	// find intersections
+	raycaster.setFromCamera( mouse, camera );
+	var intersects = raycaster.intersectObjects( scene.children );
+	if ( intersects.length > 0 ) {
+		if ( INTERSECTED != intersects[ 0 ].object ) {
+			if ( INTERSECTED ) INTERSECTED.material.emissive.setHex( INTERSECTED.currentHex );
+			INTERSECTED = intersects[ 0 ].object;
+			INTERSECTED.currentHex = INTERSECTED.material.emissive.getHex();
+			INTERSECTED.material.emissive.setHex( 0xff6d2e );
+		}
+	} else {
+		if ( INTERSECTED ) INTERSECTED.material.emissive.setHex( INTERSECTED.currentHex );
+		INTERSECTED = null;
+	}
+	renderer.render( scene, camera );
 }
