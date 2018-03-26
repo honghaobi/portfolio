@@ -1,3 +1,4 @@
+var ROTATING = false;
 $(window).load(function() {
   $('.loader-page').addClass('animated fadeOut').hide();
   lazyload();
@@ -24,6 +25,10 @@ $('#sidebar ul li').on('click', function(event){
 $('#cube .bottom').on('click', function(event) {
   $('#cube').attr('class','show-left');
   showWorkPage();
+  ROTATING = true;
+  setTimeout(function () {
+    ROTATING = false;
+  }, 1000);
 });
 
 $('#cube .left').on('click', function(event) {

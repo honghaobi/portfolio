@@ -1,58 +1,77 @@
 var container, stats;
-var camera, scene, raycaster, renderer;
+var camera, scene, renderer;
 var mouse = new THREE.Vector2(), INTERSECTED;
-var radius = 100, theta = 0;
 var timer;
 var timeStart = Date.now() * 0.001;
+var windowHalfX = window.innerWidth / 2;
+var windowHalfY = window.innerHeight / 2;
+var mouseX = 0,
+    mouseY = 0;
+var group;
+
+document.addEventListener('mousemove', onDocumentMouseMove, false);
 
 init();
 animate();
 
 function init() {
-	container = document.createElement( 'div' );
-	document.body.appendChild( container );
+  container = document.createElement( 'div' );
+  document.body.appendChild( container );
 
-	camera = new THREE.PerspectiveCamera( 60, window.innerWidth / window.innerHeight, 1, 10000 );
+  var theme = {
+      name: "cubes",
+      geometry: new THREE.BoxBufferGeometry(40, 40, 40),
+      color: 0x3f3f3f,
+      lightColor: 0xffffff,
+      createObjects: function() {
+          for (var i = 0; i < 2000; i++) {
+              var mesh = new THREE.Mesh(theme.geometry, material);
+              mesh.position.x = Math.random() * 2000 - 1000;
+              mesh.position.y = Math.random() * 2000 - 1000;
+              mesh.position.z = Math.random() * 2000 - 1000;
+
+              // mesh.rotation.x = Math.random() * 2 * Math.PI;
+              // mesh.rotation.y = Math.random() * 2 * Math.PI;
+
+              mesh.matrixAutoUpdate = false;
+              mesh.updateMatrix();
+
+              group.add(mesh);
+          }
+      }
+  };
+
+  scene = new THREE.Scene();
+  scene.fog = new THREE.Fog(0xF5F5F5, 1, 10000);
+
+  var material = new THREE.MeshLambertMaterial({
+      emissive: theme.color
+  });
+
+  group = new THREE.Group();
+
+  theme.createObjects();
+  scene.add(group);
+
+  camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 1, 10000);
   camera.position.x = 8000;
 
-	scene = new THREE.Scene();
-	scene.background = new THREE.Color( 0xf0f0f0 );
-
-	var light = new THREE.DirectionalLight( 0xffffff, 1 );
-	light.position.set( 1, 1, 1 ).normalize();
-	scene.add( light );
-
-  var pointLight = new THREE.DirectionalLight(0xffffff);
+  var pointLight = new THREE.DirectionalLight(theme.lightColor);
   pointLight.position.x = 20;
   pointLight.position.y = 120;
   pointLight.position.z = 0;
   scene.add(pointLight);
 
-	var geometry = new THREE.BoxBufferGeometry( 40, 40, 40 );
-	for ( var i = 0; i < 2000; i ++ ) {
-		var object = new THREE.Mesh( geometry, new THREE.MeshLambertMaterial( { color: 0x3f3f3f } ) );
-		object.position.x = Math.random() * 2000 - 1000;
-		object.position.y = Math.random() * 2000 - 1000;
-		object.position.z = Math.random() * 2000 - 1000;
-
-		// object.rotation.x = Math.random() * 2 * Math.PI;
-		// object.rotation.y = Math.random() * 2 * Math.PI;
-		// object.rotation.z = Math.random() * 2 * Math.PI;
-
-		scene.add( object );
-	}
-	raycaster = new THREE.Raycaster();
-	renderer = new THREE.WebGLRenderer();
-
+  renderer = new THREE.WebGLRenderer({
+      antialias: true
+  });
   renderer.setClearColor(0xF5F5F5);
-	renderer.setPixelRatio( window.devicePixelRatio );
-	renderer.setSize( window.innerWidth, window.innerHeight );
+  renderer.setPixelRatio(window.devicePixelRatio);
+  renderer.setSize(window.innerWidth, window.innerHeight);
   renderer.sortObjects = false;
 
-	container.appendChild(renderer.domElement);
-
-	document.addEventListener( 'mousemove', onDocumentMouseMove, false );
-	window.addEventListener( 'resize', onWindowResize, false );
+  container.appendChild(renderer.domElement);
+  window.addEventListener('resize', onWindowResize, false);
 }
 
 function onWindowResize() {
@@ -63,10 +82,10 @@ function onWindowResize() {
 
 function onDocumentMouseMove( event ) {
 	event.preventDefault();
-	mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
-	mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
+  mouseX = (event.clientX - windowHalfX) * 1;
+  mouseY = (event.clientY - windowHalfY) * 1;
 }
-//
+
 function animate() {
 	requestAnimationFrame( animate );
 	render();
@@ -79,44 +98,29 @@ function easeInOut(t, b, c, d) {
   return c / 2 * ((t -= 2) * t * t * t * t + 2) + b;
 }
 
-
-function Zoom(aTimer) {
-  if (camera.position.x > 500) {
+function zoom(aTimer) {
+  if (camera.position.x > 1000) {
     camera.position.x = easeInOut(aTimer, 8000, -8000, 6);
-    console.log(easeInOut(aTimer, 8000, -8000, 6));
   }
+}
 
+function rotate(aTimer, x, y, z) {
+  group.rotation.x += x || 0;
+  group.rotation.y += y || 0;
+  group.rotation.z += z || 0;
 }
 
 function render() {
   timer = Date.now() * 0.001 - timeStart;
-  // console.log(timer, camera.position.x);
-
-    Zoom(timer);
-
-  // camera.position.x -= (mouse.x * 0.1 - camera.position.x) * .05;
-  // camera.position.y -= (mouse.y * 0.1 - camera.position.y) * .05;
-  // camera.position.z -= (mouse.y * 0.1 - camera.position.y) * .05;
-
-  // camera.position.x += (mouse.x * 0.1 - camera.position.x) * .05;
-  camera.position.y += (mouse.y * 0.2 - camera.position.y) * .05;
+  zoom(timer);
+  if (ROTATING) {
+    rotate(timer, 0, 0.03);
+  }
+  camera.position.z += (mouseX * 0.1 - camera.position.z) * .02;
+  camera.position.y += (mouseY * 0.2 - camera.position.y) * .02;
 
   camera.lookAt(scene.position);
   camera.updateMatrixWorld();
 
-	// find intersections
-	raycaster.setFromCamera( mouse, camera );
-	var intersects = raycaster.intersectObjects( scene.children );
-	if ( intersects.length > 0 ) {
-		if ( INTERSECTED != intersects[ 0 ].object ) {
-			if ( INTERSECTED ) INTERSECTED.material.emissive.setHex( INTERSECTED.currentHex );
-			INTERSECTED = intersects[ 0 ].object;
-			INTERSECTED.currentHex = INTERSECTED.material.emissive.getHex();
-			INTERSECTED.material.emissive.setHex( 0xff6d2e );
-		}
-	} else {
-		if ( INTERSECTED ) INTERSECTED.material.emissive.setHex( INTERSECTED.currentHex );
-		INTERSECTED = null;
-	}
-	renderer.render( scene, camera );
+  renderer.render(scene, camera);
 }
