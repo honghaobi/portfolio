@@ -1,4 +1,20 @@
-var ROTATING = false;
+var G = {
+  rotating: false,
+  rotateNum: {x:0, y:0, z:0}
+};
+
+function cubeRotate() {
+  Math.range = function (min, max) { return min + (Math.random() * (max - min));};
+  var randNumbX = Math.range(-0.01,0.01);
+  var randNumbY = Math.range(-0.01,0.01);
+  var randNumbZ = Math.range(-0.01,0.01);
+  G.rotating = true;
+  setTimeout(function () {
+    G.rotating = false;
+    G.rotateNum = {x:randNumbX, y:randNumbY, z:randNumbZ};
+  }, 1000);
+}
+
 $(window).load(function() {
   $('.loader-page').addClass('animated fadeOut').hide();
   lazyload();
@@ -6,9 +22,7 @@ $(window).load(function() {
 });
 
 $('#sidebar ul li').on('click', function(event){
-
   $('#cube').attr('class',$(this).children('span').children('div').attr('class'));
-
   if ($('#cube').attr('class')==='show-bottom') {
     showHomePage();
   } else if ($('#cube').attr('class')==='show-left') {
@@ -25,10 +39,6 @@ $('#sidebar ul li').on('click', function(event){
 $('#cube .bottom').on('click', function(event) {
   $('#cube').attr('class','show-left');
   showWorkPage();
-  ROTATING = true;
-  setTimeout(function () {
-    ROTATING = false;
-  }, 1000);
 });
 
 $('#cube .left').on('click', function(event) {
@@ -57,10 +67,12 @@ $('#cube .front').on('click', function(event) {
 });
 
 function showHomePage() {
+  cubeRotate();
   $('.work-page, .about-page, .skills-page, .contact-page').hide();
 }
 
 function showWorkPage() {
+  cubeRotate();
   $('.about-page, .skills-page, .contact-page, .up-show, .ng-show, .epac-show, .vol-show, .ymsw-show').hide();
   $('.work-page').show();
   $('.work-page-menu ul li').siblings().removeClass().first().addClass('up-title');
@@ -70,6 +82,7 @@ function showWorkPage() {
 }
 
 function showAboutPage() {
+  cubeRotate();
   $('.work-page, .skills-page, .contact-page').hide();
   $('.about-page').show();
   $('.about-page-img').addClass('animated fadeInLeft');
@@ -77,12 +90,14 @@ function showAboutPage() {
 }
 
 function showSkillPage() {
+  cubeRotate();
   $('.work-page, .about-page, .contact-page').hide();
   $('.skills-page').show();
   $('.d-skill, .p-skill').addClass('animated zoomIn');
 }
 
 function showContactPage() {
+  cubeRotate();
   $('.work-page, .about-page, .skills-page').hide();
   $('.contact-page').show();
   $('.sl, .st, .sr, .sb').addClass('animated fadeIn');

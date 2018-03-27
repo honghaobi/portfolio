@@ -30,10 +30,10 @@ function init() {
               mesh.position.y = Math.random() * 2000 - 1000;
               mesh.position.z = Math.random() * 2000 - 1000;
 
-              // mesh.rotation.x = Math.random() * 2 * Math.PI;
-              // mesh.rotation.y = Math.random() * 2 * Math.PI;
+              // mesh.rotation.x = Math.random() * 0.1 * Math.PI;
+              // mesh.rotation.y = Math.random() * 0.1 * Math.PI;
 
-              mesh.matrixAutoUpdate = false;
+              mesh.matrixAutoUpdate = true;
               mesh.updateMatrix();
 
               group.add(mesh);
@@ -104,17 +104,13 @@ function zoom(aTimer) {
   }
 }
 
-function rotate(aTimer, x, y, z) {
-  group.rotation.x += x || 0;
-  group.rotation.y += y || 0;
-  group.rotation.z += z || 0;
-}
-
 function render() {
   timer = Date.now() * 0.001 - timeStart;
   zoom(timer);
-  if (ROTATING) {
-    rotate(timer, 0, 0.03);
+  if (G.rotating) {
+    group.rotation.x += G.rotateNum.x || 0;
+    group.rotation.y += G.rotateNum.y || 0;
+    group.rotation.z += G.rotateNum.z || 0;
   }
   camera.position.z += (mouseX * 0.1 - camera.position.z) * .02;
   camera.position.y += (mouseY * 0.2 - camera.position.y) * .02;
