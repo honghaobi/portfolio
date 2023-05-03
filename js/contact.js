@@ -9,12 +9,6 @@ CV = {
                 href: 'mailto:henrybidesign@gmail.com',
                 size: 50
             }, {
-                name: "Twitter",
-                icon: "img/social/twitter.svg",
-                size: 30,
-                href: 'https://twitter.com/kanyewest',
-                color: "#ff6d2e"
-            }, {
                 name: "Facebook",
                 icon: "img/social/facebook.svg",
                 size: 30,
@@ -31,6 +25,12 @@ CV = {
                 icon: "img/social/instagram.svg",
                 size: 30,
                 href: 'https://www.instagram.com/henbo9',
+                color: "#ff6d2e"
+            }, {
+                name: "LinkedIn",
+                icon: "img/social/linkedin.svg",
+                size: 30,
+                href: 'https://www.linkedin.com/in/henry-bi',
                 color: "#ff6d2e"
             }],
         passiveLinks: []
