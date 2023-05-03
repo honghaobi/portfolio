@@ -73,7 +73,7 @@ function showHomePage() {
 
 function showWorkPage() {
   cubeRotate();
-  $('.about-page, .skills-page, .contact-page, .up-show, .ng-show, .epac-show, .vol-show, .ymsw-show').hide();
+  $('.about-page, .skills-page, .contact-page, .up-show, .epac-show, .ymsw-show').hide();
   $('.work-page').show();
   $('.work-page-menu ul li').siblings().removeClass().first().addClass('up-title');
   $('.up').siblings().hide();
@@ -120,22 +120,10 @@ $('.work-page-menu ul li').on('click', function(event) {
     selected.addClass('up-title');
     $('.up').siblings().removeClass('fadeInDown').addClass('fadeOutDown');
     $('.up').removeClass('fadeOutDown').addClass('animated fadeInDown').show();
-  } else if (selected.html() === 'NEIGHBORGOOD') {
-    selected.addClass('ng-title');
-    $('.ng').siblings().removeClass('fadeInDown').addClass('fadeOutDown');
-    $('.ng').removeClass('fadeOutDown').addClass('animated fadeInDown').show();
   } else if (selected.html() === 'EPAC') {
     selected.addClass('epac-title');
     $('.epac').siblings().removeClass('fadeInDown').addClass('fadeOutDown');
     $('.epac').removeClass('fadeOutDown').addClass('animated fadeInDown').show();
-  } else if (selected.html() === 'VOLUNTOLD') {
-    selected.addClass('vol-title');
-    $('.vol').siblings().removeClass('fadeInDown').addClass('fadeOutDown');
-    $('.vol').removeClass('fadeOutDown').addClass('animated fadeInDown').show();
-  } else if (selected.html() === 'NERDFLIRT') {
-    selected.addClass('nf-title');
-    $('.nf').siblings().removeClass('fadeInDown').addClass('fadeOutDown');
-    $('.nf').removeClass('fadeOutDown').addClass('animated fadeInDown').show();
   } else if (selected.html() === 'YMSW') {
     selected.addClass('ymsw-title');
     $('.ymsw').siblings().removeClass('fadeInDown').addClass('fadeOutDown');
@@ -155,14 +143,6 @@ $('.up-close').on('click', function(event) {
   $('.up-show').removeClass('animated slideInRight').addClass('animated slideOutLeft');
   $('.up-close, .arrow').appendTo('.up-show');
 });
-$('.ng').on('click', function(event) {
-  $('.ng-show').removeClass('animated slideOutLeft').addClass('animated slideInRight').show();
-  $('.ng-close, .arrow').insertBefore('.work-page').addClass('animated slideInUp');
-});
-$('.ng-close').on('click', function(event) {
-  $('.ng-show').removeClass('animated slideInRight').addClass('animated slideOutLeft');
-  $('.ng-close, .arrow').appendTo('.ng-show');
-});
 $('.epac').on('click', function(event) {
   $('.epac-show').removeClass('animated slideOutLeft').addClass('animated slideInRight').show();
   $('.epac-close, .arrow').insertBefore('.work-page').addClass('animated slideInUp');
@@ -170,14 +150,6 @@ $('.epac').on('click', function(event) {
 $('.epac-close').on('click', function(event) {
   $('.epac-show').removeClass('animated slideInRight').addClass('animated slideOutLeft');
   $('.epac-close, .arrow').appendTo('.ng-show');
-});
-$('.vol').on('click', function(event) {
-  $('.vol-show').removeClass('animated slideOutLeft').addClass('animated slideInRight').show();
-  $('.vol-close, .arrow').insertBefore('.work-page').addClass('animated slideInUp');
-});
-$('.vol-close').on('click', function(event) {
-  $('.vol-show').removeClass('animated slideInRight').addClass('animated slideOutLeft');
-  $('.vol-close, .arrow').appendTo('.ng-show');
 });
 $('.ymsw').on('click', function(event) {
   $('.ymsw-show').removeClass('animated slideOutLeft').addClass('animated slideInRight').show();
