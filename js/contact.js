@@ -32,12 +32,6 @@ CV = {
                 size: 30,
                 href: 'https://www.instagram.com/henbo9',
                 color: "#ff6d2e"
-            }, {
-                name: "LinkedIn",
-                icon: "img/social/linkedin.svg",
-                size: 30,
-                href: 'https://www.linkedin.com/in/henry-bi',
-                color: "#ff6d2e"
             }],
         passiveLinks: []
     },
