@@ -43,7 +43,7 @@
   background-color: rgba(255, 255, 255, 0.7);
   color: #303030;
   z-index: 2;
-  padding: 130px 130px 0 0;
+  padding: 80px 130px 0 0;
   overflow: hidden;
   transition: .5s ease-in-out;
 }
@@ -67,6 +67,173 @@
   cursor: pointer;
 }
 
+
+.cv-title {
+  color: rgba(66, 183, 153, 1);
+}
+
+.cv {
+  position: absolute;
+  top: 50%;
+  margin-top: -300px;
+  left: 50%;
+  width: 600px;
+  height: 600px;
+  background-color: rgba(66, 183, 153, 0.8);
+  z-index: 2;
+  overflow: hidden;
+  transition: .5s ease-in-out;
+}
+
+.cv:hover {
+  background-color: rgba(66, 183, 153, 1);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+.cv img {
+  position: absolute;
+  width: 800px;
+  top: 100px;
+  left: 10px;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.cv:hover img{
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+
+.ripld-title {
+  color: rgba(146, 99, 224, 1);
+}
+
+.ripld {
+  position: absolute;
+  top: 50%;
+  margin-top: -300px;
+  left: 50%;
+  width: 600px;
+  height: 600px;
+  background-color: rgba(146, 99, 224, 0.8);
+  z-index: 2;
+  overflow: hidden;
+  transition: .5s ease-in-out;
+}
+
+.ripld:hover {
+  background-color: rgba(146, 99, 224, 1);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+.ripld img {
+  position: absolute;
+  width: 800px;
+  top: 100px;
+  left: 10px;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.ripld:hover img{
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+
+.riplw-title {
+  color: rgba(56, 74, 212, 1);
+}
+
+.riplw {
+  position: absolute;
+  top: 50%;
+  margin-top: -300px;
+  left: 50%;
+  width: 600px;
+  height: 600px;
+  background-color: rgba(56, 74, 212, 0.8);
+  z-index: 2;
+  overflow: hidden;
+  transition: .5s ease-in-out;
+}
+
+.riplw:hover {
+  background-color: rgba(56, 74, 212, 1);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+.riplw img {
+  position: absolute;
+  width: 800px;
+  top: 100px;
+  left: 10px;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.riplw:hover img{
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+
+.wedding-title {
+  color: rgba(84, 212, 196, 1);
+}
+
+.wedding {
+  position: absolute;
+  top: 50%;
+  margin-top: -300px;
+  left: 50%;
+  width: 600px;
+  height: 600px;
+  background-color: rgba(84, 212, 196, 0.8);
+  z-index: 2;
+  overflow: hidden;
+  transition: .5s ease-in-out;
+}
+
+.wedding:hover {
+  background-color: rgba(84, 212, 196, 1);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+.wedding img {
+  position: absolute;
+  width: 800px;
+  top: 100px;
+  left: 10px;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.wedding:hover img{
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
 
 .up-title {
   color: rgba(33, 153, 232, 1);
@@ -109,48 +276,6 @@
   transition: .5s ease-in-out;
 }
 
-
-.ng-title {
-  color: rgba(85, 173, 182, 1);
-}
-
-.ng {
-  position: absolute;
-  top: 50%;
-  margin-top: -300px;
-  left: 50%;
-  width: 600px;
-  height: 600px;
-  background-color: rgba(85, 173, 182, 0.8);
-  z-index: 2;
-  overflow: hidden;
-  transition: .5s ease-in-out;
-}
-
-.ng:hover {
-  background-color: rgba(85, 173, 182, 1);
-  transition: .5s ease-in-out;
-  cursor: pointer;
-}
-
-.ng img {
-  position: absolute;
-  width: 800px;
-  top: 100px;
-  left: 10px;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
-}
-
-.ng:hover img{
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
-}
-
 .epac-title {
   color: rgba(255, 109, 46, 1);
 }
@@ -186,47 +311,6 @@
 }
 
 .epac:hover img{
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
-}
-
-.vol-title {
-  color: rgba(46, 204, 113, 1);
-}
-
-.vol {
-  position: absolute;
-  top: 50%;
-  margin-top: -300px;
-  left: 50%;
-  width: 600px;
-  height: 600px;
-  background-color: rgba(46, 204, 113, 0.8);
-  z-index: 2;
-  overflow: hidden;
-  transition: .5s ease-in-out;
-}
-
-.vol:hover {
-  background-color: rgba(46, 204, 113, 1);
-  transition: .5s ease-in-out;
-  cursor: pointer;
-}
-
-.vol img {
-  position: absolute;
-  width: 800px;
-  top: 100px;
-  left: 10px;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
-}
-
-.vol:hover img{
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
   -webkit-transition: .5s ease-in-out;
@@ -323,6 +407,143 @@
 }
 
 /*------------------------------------------------------------*/
+
+
+.cv-show {
+  background-color: rgba(255, 255, 255, 1);
+  position: fixed;
+  overflow: scroll;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  color: #303030;
+  z-index: 4;
+  padding: 5%;
+}
+
+.cv-show img {
+  position: absolute;
+  z-index: -1;
+}
+
+.cv-show div {
+  position: absolute;
+}
+
+.cv-close {
+  position: fixed !important;
+  top: 30px;
+  right: 30px;
+  z-index: 5;
+}
+
+.cv-title-show {
+  color: rgba(66, 183, 153, 1);
+  font-size: 80px;
+}
+
+.ripld-show {
+  background-color: rgba(255, 255, 255, 1);
+  position: fixed;
+  overflow: scroll;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  color: #303030;
+  z-index: 4;
+  padding: 5%;
+}
+
+.ripld-show img {
+  position: absolute;
+  z-index: -1;
+}
+
+.ripld-show div {
+  position: absolute;
+}
+
+.ripld-close {
+  position: fixed !important;
+  top: 30px;
+  right: 30px;
+  z-index: 5;
+}
+
+.ripld-title-show {
+  color: rgba(146, 99, 224, 1);
+  font-size: 80px;
+}
+
+.riplw-show {
+  background-color: rgba(255, 255, 255, 1);
+  position: fixed;
+  overflow: scroll;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  color: #303030;
+  z-index: 4;
+  padding: 5%;
+}
+
+.riplw-show img {
+  position: absolute;
+  z-index: -1;
+}
+
+.riplw-show div {
+  position: absolute;
+}
+
+.riplw-close {
+  position: fixed !important;
+  top: 30px;
+  right: 30px;
+  z-index: 5;
+}
+
+.riplw-title-show {
+  color: rgba(56, 74, 212, 1);
+  font-size: 80px;
+}
+
+.wedding-show {
+  background-color: rgba(255, 255, 255, 1);
+  position: fixed;
+  overflow: scroll;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  color: #303030;
+  z-index: 4;
+  padding: 5%;
+}
+
+.wedding-show img {
+  position: absolute;
+  z-index: -1;
+}
+
+.wedding-show div {
+  position: absolute;
+}
+
+.wedding-close {
+  position: fixed !important;
+  top: 30px;
+  right: 30px;
+  z-index: 5;
+}
+
+.wedding-title-show {
+  color: rgba(84, 212, 196, 1);
+  font-size: 80px;
+}
 
 .up-show {
   background-color: rgba(255, 255, 255, 1);
@@ -635,272 +856,6 @@
   margin-top: 250%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-.ng-show {
-  background-color: rgba(255, 255, 255, 1);
-  position: fixed;
-  overflow: scroll;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  color: #303030;
-  z-index: 4;
-  padding: 5%;
-}
-
-.ng-show img {
-  position: absolute;
-  z-index: -1;
-}
-
-.ng-show div {
-  position: absolute;
-}
-
-.ng-close {
-  position: fixed !important;
-  top: 30px;
-  right: 30px;
-  z-index: 5;
-}
-
-.ng-title-show {
-  color: rgba(85, 173, 182, 1);
-  font-size: 80px;
-}
-
-.ng-vg {
-  text-decoration: none;
-  width: 50px;
-  height: 50px;
-  right: 60%;
-  background-color: rgba(60, 60, 60, 0.8);
-  transition: .5s ease-in-out;
-  color: white;
-  cursor: pointer;
-}
-
-.ng-vg:hover {
-  background-color: rgba(60, 60, 60, 1);
-  transition: .5s ease-in-out;
-  cursor: pointer;
-}
-
-.ng-vw {
-  position: absolute;
-  text-decoration: none;
-  font-weight: lighter;
-  width: 150px;
-  height: 50px;
-  padding-top: 18px;
-  padding-left: 20px;
-  left: 40%;
-  background-color: rgba(85, 173, 182, 0.8);
-  transition: .5s ease-in-out;
-  color: white;
-  cursor: pointer;
-}
-
-.ng-vw:hover {
-  background-color: rgba(85, 173, 182, 1);
-  transition: .5s ease-in-out;
-  cursor: pointer;
-}
-
-.ng-x {
-  z-index: 1 !important;
-  width: 60%;
-  left: 5%;
-  top: 400px;
-}
-
-.ng-0 {
-  width: 50%;
-  right: 10%;
-  top: 50px;
-}
-
-.ng-s {
-  font-size: 25px;
-  text-align: left;
-  left: 25%;
-  width: 50%;
-  top: 950px;
-}
-
-.ng-th {
-  font-size: 20px;
-  font-weight: bold;
-  color: rgba(85, 173, 182, 1);
-}
-
-.ng-t1 {
-  color: rgba(170, 170, 170, 1);
-  font-size: 20px;
-  font-weight: lighter;
-  text-align: right;
-  right: 50%;
-  width: 30%;
-  top: 1060px;
-  list-style: none;
-}
-
-.ng-t1 ul{
-  text-align: right;
-}
-
-.ng-t2 {
-  color: rgba(170, 170, 170, 1);
-  font-size: 20px;
-  font-weight: lighter;
-  text-align: left;
-  left: 50%;
-  width: 30%;
-  top: 1060px;
-  list-style: none;
-}
-
-.ng-1 {
-  width: 90%;
-  top: 1500px;
-}
-
-.ng-2 {
-  width: 35%;
-  left: 60%;
-  top: 1500px;
-  margin-top: -30%;
-}
-
-.ng-s2 {
-  font-size: 20px;
-  text-align: center;
-  left: 17%;
-  width: 70%;
-  top: 1500px;
-  margin-top: 50%;
-}
-
-.ng-3 {
-  width: 80%;
-  left: 10%;
-  top: 1500px;
-  margin-top: 75%;
-  z-index: -3;
-}
-
-.ng-b1 {
-  width: 90%;
-  height: 1200px;
-  left: 5%;
-  top: 1500px;
-  margin-top: 70%;
-  background-color: rgba(233, 105, 86, 0.5);
-  z-index: -2;
-}
-
-.ng-4 {
-  left: 10%;
-  width: 45%;
-  top: 1500px;
-  margin-top: 130%;
-  box-shadow: 18px 18px 0px 1px #55adb6;
-}
-
-.ng-s3 {
-  font-size: 18px;
-  font-weight: lighter;
-  text-align: justify;
-  right: 10%;
-  width: 32%;
-  top: 1500px;
-  margin-top: 130%;
-}
-
-.ng-7 {
-  width: 90%;
-  top: 1500px;
-  left: 5%;
-  margin-top: 175%;
-}
-
-.ng-c1 {
-  width: 200px;
-  height: 200px;
-  background-color: #e96956;
-  top: 1500px;
-  left: 20%;
-  margin-top: 240%;
-  padding-top: 150px;
-  text-align: right;
-  font-size: 55px;
-  color: white;
-}
-
-.ng-c2 {
-  width: 200px;
-  height: 200px;
-  background-color: #55adb6;
-  top: 1500px;
-  left: 30%;
-  margin-top: 230%;
-  padding-top: 150px;
-  text-align: right;
-  font-size: 55px;
-  color: white;
-}
-
-.ng-f1 {
-  font-family: 'lato-light';
-  font-size: 100px;
-  top: 1500px;
-  left: 45%;
-  margin-top: 245%;
-}
-
-.ng-f1 h3 {
-  margin-top: -20px;
-  font-size: 25px;
-  text-align: right;
-  color: rgba(170, 170, 170, 1);
-}
-
-.ng-f2 {
-  font-family: 'raleway-regular';
-  font-size: 100px;
-  top: 1500px;
-  left: 35%;
-  margin-top: 255%;
-}
-
-.ng-f2 h3 {
-  margin-top: -20px;
-  font-size: 25px;
-  text-align: right;
-  color: rgba(170, 170, 170, 1);
-}
-
-.ng-6 {
-  width: 70%;
-  left: 15%;
-  top: 1500px;
-  margin-top: 270%;
-  margin-bottom: 50px;
-}
-
-
 .epac-show {
   background-color: rgba(255, 255, 255, 1);
   position: fixed;
@@ -1084,203 +1039,6 @@
   top: 1200px;
   margin-top: 190%;
   left: 10%;
-  margin-bottom: 50px;
-}
-
-
-.vol-show {
-  background-color: rgba(255, 255, 255, 1);
-  position: fixed;
-  overflow: scroll;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  color: #303030;
-  z-index: 4;
-  padding: 5%;
-}
-
-.vol-close {
-  position: fixed;
-  top: 30px;
-  right: 30px;
-  z-index: 5;
-}
-
-.vol-show img {
-  position: absolute;
-  z-index: -1;
-}
-
-.vol-show div {
-  position: absolute;
-}
-
-.vol-close {
-  position: fixed;
-  top: 30px;
-  right: 30px;
-  z-index: 5;
-}
-
-.vol-title-show {
-  color: rgba(46, 204, 113, 1);
-  font-size: 80px;
-}
-
-.vol-vg {
-  text-decoration: none;
-  width: 50px;
-  height: 50px;
-  right: 60%;
-  background-color: rgba(60, 60, 60, 0.8);
-  transition: .5s ease-in-out;
-  color: white;
-  cursor: pointer;
-}
-
-.vol-vg:hover {
-  background-color: rgba(60, 60, 60, 1);
-  transition: .5s ease-in-out;
-  cursor: pointer;
-}
-
-.vol-vw {
-  position: absolute;
-  text-decoration: none;
-  font-weight: lighter;
-  width: 150px;
-  height: 50px;
-  padding-top: 18px;
-  padding-left: 20px;
-  left: 40%;
-  background-color: rgba(46, 204, 113, 0.8);
-  transition: .5s ease-in-out;
-  color: white;
-  cursor: pointer;
-}
-
-.vol-vw:hover {
-  background-color: rgba(46, 204, 113, 1);
-  transition: .5s ease-in-out;
-  cursor: pointer;
-}
-
-.vol-x {
-  z-index: 1 !important;
-  width: 60%;
-  left: 5%;
-  top: 400px;
-}
-
-.vol-s {
-  font-size: 25px;
-  text-align: left;
-  left: 25%;
-  width: 60%;
-  top: 950px;
-}
-
-.vol-0 {
-  width: 50%;
-  right: 10%;
-  top: 50px;
-}
-
-.vol-th {
-  font-size: 20px;
-  font-weight: bold;
-  color: rgba(46, 204, 113, 1);
-}
-
-.vol-t1 {
-  color: rgba(170, 170, 170, 1);
-  font-size: 20px;
-  font-weight: lighter;
-  text-align: right;
-  right: 50%;
-  width: 30%;
-  top: 1120px;
-  list-style: none;
-}
-
-.vol-t1 ul{
-  text-align: right;
-}
-
-.vol-t2 {
-  color: rgba(170, 170, 170, 1);
-  font-size: 20px;
-  font-weight: lighter;
-  text-align: left;
-  left: 50%;
-  width: 30%;
-  top: 1120px;
-  list-style: none;
-}
-
-.vol-1 {
-  width: 70%;
-  top: 1400px;
-  left: 15%;
-}
-
-.vol-c1 {
-  width: 200px;
-  height: 200px;
-  background-color: #2ecc71;
-  top: 1400px;
-  left: 20%;
-  margin-top: 55%;
-  padding-top: 150px;
-  text-align: right;
-  font-size: 55px;
-  color: white;
-}
-
-.vol-c2 {
-  width: 200px;
-  height: 200px;
-  background-color: #306166;
-  top: 1400px;
-  left: 30%;
-  margin-top: 50%;
-  padding-top: 150px;
-  text-align: right;
-  font-size: 55px;
-  color: white;
-}
-
-.vol-f1 {
-  font-family: 'Pragati Narrow', sans-serif;
-  font-size: 100px;
-  top: 1400px;
-  left: 40%;
-  margin-top: 65%;
-}
-
-.vol-f1 h3 {
-  margin-top: -20px;
-  font-size: 25px;
-  text-align: right;
-  color: rgba(170, 170, 170, 1);
-}
-
-.vol-s2 {
-  font-size: 20px;
-  text-align: right;
-  left: 15%;
-  margin-top: 80%;
-  top: 1400px;
-  width: 35%;
-}
-
-.vol-2 {
-  width: 70%;
-  top: 1400px;
-  margin-top: 90%;
-  left: 15%;
   margin-bottom: 50px;
 }
 
