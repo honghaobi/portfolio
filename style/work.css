@@ -741,6 +741,7 @@
   left: 5%;
   top: 2200px;
   margin-top: 80%;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
 }
 
 .wedding-4 {
@@ -774,6 +775,7 @@
   width: 20%;
   top: 2200px;
   margin-top: 180%;
+  padding-bottom: 300px;
 }
 
 .wedding-7 {
