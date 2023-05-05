@@ -727,40 +727,61 @@
   color: rgba(170, 170, 170, 1);
 }
 
-.wedding-6 {
+.wedding-s2 {
+  font-size: 25px;
+  text-align: left;
+  left: 70%;
   width: 20%;
-  right: 10%;
-  top: 1500px;
+  top: 2200px;
+  margin-top: 80%;
+}
+
+.wedding-3 {
+  width: 60%;
+  left: 5%;
+  top: 2200px;
+  margin-top: 80%;
+}
+
+.wedding-4 {
+  width: 25%;
+  left: 5%;
+  top: 2200px;
+  margin-top: 120%;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+}
+
+.wedding-5 {
+  width: 25%;
+  left: 35%;
+  top: 2200px;
+  margin-top: 120%;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+}
+
+.wedding-6 {
+  width: 25%;
+  left: 65%;
+  top: 2200px;
+  margin-top: 120%;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+}
+
+.wedding-s3 {
+  font-size: 25px;
+  text-align: right;
+  left: 5%;
+  width: 20%;
+  top: 2200px;
   margin-top: 180%;
 }
 
-.wedding-8 {
+.wedding-7 {
   width: 60%;
-  left: 10%;
-  top: 1500px;
-  margin-top: 200%;
-  box-shadow: 18px 18px 0px 1px #2099e8;
-
-}
-
-.wedding-s4 {
-  padding: 1%;
-  font-size: 18px;
-  font-weight: lighter;
-  text-align: left;
-  right: 15%;
-  width: 20%;
-  top: 1500px;
-  margin-top: 230%;
-  background-color: white;
-  box-shadow: 18px 18px 0px 1px #d7d7d7;
-}
-
-.wedding-9 {
-  width: 90%;
-  left: 5%;
-  top: 1500px;
-  margin-top: 250%;
+  left: 30%;
+  top: 2200px;
+  margin-top: 180%;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
 }
 
 .up-show {
