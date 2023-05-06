@@ -83,7 +83,7 @@ function showHomePage() {
 
 function showWorkPage() {
   cubeRotate();
-  $('.about-page, .skills-page, .contact-page, .cv-show, .ripld-show, riplw-show, .up-show, .wedding-show, .epac-show, .ymsw-show').hide();
+  $('.about-page, .skills-page, .contact-page, .cv-show, .ripld-show, .riplw-show, .up-show, .wedding-show, .epac-show, .ymsw-show').hide();
   $('.work-page').show();
   $('.work-page-menu ul li').siblings().removeClass().first().addClass('cv-title');
   $('.cv').siblings().hide();

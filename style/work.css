@@ -399,7 +399,6 @@
   position: absolute;
   right: 0px;
   margin-top: -60px;
-  margin-left: 10%;
   margin-right: 40%;
   font-size: 40px;
   font-weight: lighter;
@@ -518,6 +517,180 @@
   color: rgba(56, 74, 212, 1);
   font-size: 80px;
 }
+
+.riplw-title-sub {
+  position: absolute;
+  right: 61%;
+  margin-top: -60px;
+  font-size: 40px;
+  font-weight: lighter;
+  text-align: right;
+}
+
+.riplw-vg {
+  text-decoration: none;
+  width: 50px;
+  height: 50px;
+  right: 60%;
+  background-color: rgba(60, 60, 60, 0.8);
+  transition: .5s ease-in-out;
+  color: white;
+  cursor: pointer;
+}
+
+.riplw-vg:hover {
+  background-color: rgba(60, 60, 60, 1);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+.riplw-vw {
+  position: absolute;
+  text-decoration: none;
+  font-weight: lighter;
+  width: 150px;
+  height: 50px;
+  padding-top: 18px;
+  padding-left: 20px;
+  left: 40%;
+  background-color: rgba(56, 74, 212, 0.8);
+  transition: .5s ease-in-out;
+  color: white;
+  cursor: pointer;
+}
+
+.riplw-vw:hover {
+  background-color: rgba(56, 74, 212, 1);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+.riplw-x {
+  z-index: 1 !important;
+  width: 60%;
+  left: 5%;
+  top: 400px;
+}
+
+.riplw-0 {
+  width: 50%;
+  right: 10%;
+  top: 50px;
+}
+
+.riplw-s {
+  font-size: 25px;
+  text-align: left;
+  left: 40%;
+  width: 50%;
+  top: 920px;
+}
+
+.riplw-th {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgba(56, 74, 212, 1);
+}
+
+.riplw-t1 {
+  color: rgba(170, 170, 170, 1);
+  font-size: 20px;
+  font-weight: lighter;
+  text-align: right;
+  right: 65%;
+  width: 30%;
+  top: 902px;
+  list-style: none;
+}
+
+.riplw-t1 ul{
+  text-align: right;
+}
+
+.riplw-1 {
+  left: 15%;
+  width: 70%;
+  top: 1200px;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+}
+
+.riplw-s2 {
+  font-size: 20px;
+  text-align: left;
+  left: 15%;
+  width: 70%;
+  margin-top: 50%;
+  top: 1200px;
+}
+
+.riplw-2 {
+  left: 15%;
+  width: 70%;
+  top: 1200px;
+  margin-top: 70%;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+}
+
+.riplw-3 {
+  left: 15%;
+  width: 70%;
+  top: 1200px;
+  margin-top: 130%;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+}
+
+.riplw-s3 {
+  font-size: 20px;
+  text-align: left;
+  left: 70%;
+  width: 25%;
+  margin-top: 200%;
+  top: 1200px;
+}
+
+.riplw-4 {
+  left: 5%;
+  width: 60%;
+  top: 1200px;
+  margin-top: 200%;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+}
+
+.riplw-5 {
+  left: 5%;
+  width: 20%;
+  top: 1200px;
+  margin-top: 250%;
+  box-shadow: 0px 0px 0px 10px rgba(56, 74, 212, 1);
+}
+
+.riplw-6 {
+  left: 35%;
+  top: 1200px;
+  width: 500px;
+  height: 500px;
+  margin-top: 250%;
+  box-shadow: 0px 0px 0px 10px rgba(56, 74, 212, 1);
+}
+
+.riplw-s4 {
+  font-size: 20px;
+  text-align: left;
+  left: 70%;
+  width: 25%;
+  top: 1200px;
+  margin-top: 320%
+}
+
+.riplw-7 {
+  left: 5%;
+  width: 60%;
+  top: 1200px;
+  margin-top: 320%;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+}
+
+
 
 .wedding-show {
   background-color: rgba(255, 255, 255, 1);
@@ -728,7 +901,7 @@
 }
 
 .wedding-s2 {
-  font-size: 25px;
+  font-size: 20px;
   text-align: left;
   left: 70%;
   width: 20%;
@@ -769,7 +942,7 @@
 }
 
 .wedding-s3 {
-  font-size: 25px;
+  font-size: 20px;
   text-align: right;
   left: 5%;
   width: 20%;
@@ -1481,4 +1654,56 @@
   margin-top: 235%;
   margin-bottom: 50px;
   width: 80%;
+}
+
+.browser {
+    width: 1200px;
+    height: 420px;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0px 20px 25px 10px rgba(0, 0, 0, .4);
+    margin: auto
+}
+
+.toolbar {
+    background-color: #CBCBCB;
+    width: auto;
+    height: 23px;
+    border-radius: 5px 5px 0 0;
+}
+
+.tab {
+    border-bottom: 15px solid #E6E6E6;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-radius: 5px 5px 0 0;
+    height: 9px;
+    width: 110px;
+    display: inline-block;
+}
+
+.tabbar {
+  background-color: #E6E6E6;
+  width: auto;
+  height: 23px;
+}
+
+.btn {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  float: left;
+  margin: 8px 5px 0 0;
+  background-color: #E2E2E2;
+  box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, .05);
+}
+
+.btn:first-of-type {
+  margin-left: 10px;
+}
+
+.viewport {
+    background-color: #b6ebef;
+    width: auto;
+    height: 373px;
+    border-top: 1px solid #CBCBCB;
 }
