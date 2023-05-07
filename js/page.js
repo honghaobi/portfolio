@@ -130,7 +130,7 @@ $('.work-page-menu ul li').on('click', function(event) {
     selected.addClass('cv-title');
     $('.cv').siblings().removeClass('fadeInDown').addClass('fadeOutDown');
     $('.cv').removeClass('fadeOutDown').addClass('animated fadeInDown').show();
-  } else if (selected.html() === 'RIPL DESIGN') {
+  } else if (selected.html() === 'RIPL DESIGNS') {
     selected.addClass('ripld-title');
     $('.ripld').siblings().removeClass('fadeInDown').addClass('fadeOutDown');
     $('.ripld').removeClass('fadeOutDown').addClass('animated fadeInDown').show();
