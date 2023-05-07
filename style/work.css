@@ -41,7 +41,7 @@
   right: 50%;
   width: 600px;
   height: 600px;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(250, 250, 250, 0.7);
   color: #303030;
   z-index: 2;
   padding: 80px 130px 0 0;
@@ -50,7 +50,7 @@
 }
 
 .work-page-menu:hover {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(250, 250, 250, 1);
   transition: .5s ease-in-out;
 }
 
@@ -417,7 +417,7 @@
 
 
 .cv-show {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(250, 250, 250, 1);
   position: fixed;
   overflow: scroll;
   top: 0;
@@ -451,7 +451,7 @@
 }
 
 .ripld-show {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(250, 250, 250, 1);
   position: fixed;
   overflow: scroll;
   top: 0;
@@ -485,7 +485,7 @@
 }
 
 .riplw-show {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(250, 250, 250, 1);
   position: fixed;
   overflow: scroll;
   top: 0;
@@ -502,7 +502,7 @@
   z-index: -1;
 }
 
-.riplw-show div {
+.riplw-show > div {
   position: absolute;
 }
 
@@ -608,10 +608,10 @@
 }
 
 .riplw-1 {
+  position: relative;
   left: 15%;
   width: 70%;
   top: 1200px;
-  box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
 }
 
 .riplw-s2 {
@@ -619,7 +619,7 @@
   text-align: left;
   left: 15%;
   width: 70%;
-  margin-top: 50%;
+  margin-top: 55%;
   top: 1200px;
 }
 
@@ -627,16 +627,14 @@
   left: 15%;
   width: 70%;
   top: 1200px;
-  margin-top: 70%;
-  box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+  margin-top: 75%;
 }
 
 .riplw-3 {
   left: 15%;
   width: 70%;
   top: 1200px;
-  margin-top: 130%;
-  box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+  margin-top: 135%;
 }
 
 .riplw-s3 {
@@ -653,7 +651,6 @@
   width: 60%;
   top: 1200px;
   margin-top: 200%;
-  box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
 }
 
 .riplw-5 {
@@ -661,7 +658,8 @@
   width: 20%;
   top: 1200px;
   margin-top: 250%;
-  box-shadow: 0px 0px 0px 10px rgba(56, 74, 212, 1);
+  margin-left: 5px;
+  box-shadow: 0px 0px 0px 5px rgba(56, 74, 212, 1);
 }
 
 .riplw-6 {
@@ -670,7 +668,7 @@
   width: 500px;
   height: 500px;
   margin-top: 250%;
-  box-shadow: 0px 0px 0px 10px rgba(56, 74, 212, 1);
+  box-shadow: 0px 0px 0px 5px rgba(56, 74, 212, 1);
 }
 
 .riplw-s4 {
@@ -679,7 +677,8 @@
   left: 70%;
   width: 25%;
   top: 1200px;
-  margin-top: 320%
+  margin-top: 320%;
+  padding-bottom: 600px;
 }
 
 .riplw-7 {
@@ -687,13 +686,11 @@
   width: 60%;
   top: 1200px;
   margin-top: 320%;
-  box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
 }
 
 
-
 .wedding-show {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(250, 250, 250, 1);
   position: fixed;
   overflow: scroll;
   top: 0;
@@ -710,7 +707,7 @@
   z-index: -1;
 }
 
-.wedding-show div {
+.wedding-show > div {
   position: absolute;
 }
 
@@ -821,14 +818,12 @@
   left: 15%;
   width: 70%;
   top: 1200px;
-  box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
 }
 
 .wedding-2 {
   left: 15%;
   width: 70%;
   top: 1900px;
-  box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
 }
 
 .wedding-c1 {
@@ -914,7 +909,6 @@
   left: 5%;
   top: 2200px;
   margin-top: 80%;
-  box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
 }
 
 .wedding-4 {
@@ -956,11 +950,10 @@
   left: 30%;
   top: 2200px;
   margin-top: 180%;
-  box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
 }
 
 .up-show {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(250, 250, 250, 1);
   position: fixed;
   overflow: scroll;
   top: 0;
@@ -1271,7 +1264,7 @@
 }
 
 .epac-show {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(250, 250, 250, 1);
   position: fixed;
   overflow: scroll;
   top: 0;
@@ -1457,7 +1450,7 @@
 }
 
 .ymsw-show {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(250, 250, 250, 1);
   position: fixed;
   overflow: scroll;
   top: 0;
@@ -1656,19 +1649,22 @@
   width: 80%;
 }
 
+
 .browser {
-    width: 1200px;
-    height: 420px;
+    display: relative;
+    width: 100%;
+    height: 100%;
     border-radius: 5px 5px 0 0;
-    box-shadow: 0px 20px 25px 10px rgba(0, 0, 0, .4);
     margin: auto
 }
 
 .toolbar {
+    position: relative;
     background-color: #CBCBCB;
     width: auto;
-    height: 23px;
+    height: 40px;
     border-radius: 5px 5px 0 0;
+    border-bottom: 15px solid #E6E6E6;
 }
 
 .tab {
@@ -1676,15 +1672,9 @@
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-radius: 5px 5px 0 0;
-    height: 9px;
+    height: 25px;
     width: 110px;
     display: inline-block;
-}
-
-.tabbar {
-  background-color: #E6E6E6;
-  width: auto;
-  height: 23px;
 }
 
 .btn {
@@ -1692,18 +1682,45 @@
   height: 10px;
   border-radius: 5px;
   float: left;
-  margin: 8px 5px 0 0;
+  margin: 8px 35px 0 10px;
   background-color: #E2E2E2;
   box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, .05);
 }
 
-.btn:first-of-type {
-  margin-left: 10px;
+.btn::after {
+  display: inline;
+  position: absolute;
+  left: 25px;
+  top: 0;
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  margin-top: 8px;
+  background-color: #E2E2E2;
+  box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, .05);
 }
 
-.viewport {
-    background-color: #b6ebef;
-    width: auto;
-    height: 373px;
-    border-top: 1px solid #CBCBCB;
+.btn::before {
+  display: inline;
+  position: absolute;
+  left: 40px;
+  top: 0;
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  margin-top: 8px;
+  background-color: #E2E2E2;
+  box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, .05);
+}
+
+.browser-img {
+  width: 100%;
+}
+
+.browser-border {
+  border-bottom: 1px solid #E2E2E2;
+  border-left: 1px solid #E2E2E2;
+  border-right: 1px solid #E2E2E2;
 }
